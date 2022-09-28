@@ -4,8 +4,8 @@
 }
 
 @font-face {
-font-family: philosopher;
-src: url(/assets/fonts/philosopher-regular.ttf);
+  font-family: philosopher;
+  src: url(/assets/fonts/philosopher-regular.ttf);
 }
 
 :root {
@@ -20,4 +20,14 @@ src: url(/assets/fonts/philosopher-regular.ttf);
 
 * {
   font-family: var(--title-font);
+}
+
+#main_logo {
+  width: 15%;
+  height: auto;
+}
+
+#tickets_logo {
+  width: 15%;
+  height: auto;
 }
