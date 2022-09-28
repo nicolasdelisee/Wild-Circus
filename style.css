@@ -1,0 +1,23 @@
+@font-face {
+  font-family: Circus;
+  src: url(/assets/Circus.ttf);
+}
+
+@font-face {
+font-family: Philosopher-Regular;
+src: url(/assets/Philosopher-Regular.ttf);
+}
+
+:root {
+  --main-color: #69040C;
+  --second-color: #F4E1D0;
+  --third-color: #BD8915;
+  --fourth-color: #AB0918;
+  --fifth-color: #148276;
+  --title-font: Circus;
+  --text-font: Philospher-Regular;
+}
+
+* {
+  font-family: var(--text-font);
+}
