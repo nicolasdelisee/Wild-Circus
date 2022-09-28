@@ -19,15 +19,53 @@
 }
 
 * {
-  font-family: var(--title-font);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: var(--text-font);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+
+.navbar ul {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--main-color);
+  height: 75px;
+
 }
 
 #main_logo {
-  width: 15%;
-  height: auto;
+  width: auto;
+  height: 100px;
+  position: absolute;
+  top: 15px;
+  left: 5px;
 }
 
 #tickets_logo {
-  width: 15%;
+  width: auto;
+  height: 70px;
+}
+
+.video_container {
+  width: 100%;
+}
+
+#video_gymnaste_line {
+  width: 100%;
   height: auto;
+}
+
+.title {
+  font-family: var(--title-font);
+  color: var(--third-color);
+  position: absolute;
+  top: 150px;
 }
