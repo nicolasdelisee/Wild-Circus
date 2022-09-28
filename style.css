@@ -31,3 +31,76 @@
   width: 15%;
   height: auto;
 }
+
+#team_picture {
+  width: 100%;
+  height: auto;
+}
+
+#team_title {
+  font-family: var(--text-font);
+  font-size: 3em;
+  text-align: center;
+  margin-top: 7vh;
+}
+
+/* IL VA FALLOIR PASSER LA POLICE PAR DEFAULT SUR TEXT FONT */
+p {
+  font-family: var(--text-font);
+}
+
+h2 {
+  font-family: var(--text-font);
+}
+
+/* FIN D4EFFET DU COMMENTAIRE */
+.conteneur_about {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.conteneur_about .first_artist {
+  width: 40%;
+  justify-content: center;
+  text-align: center;
+  padding: 3%;
+}
+
+.conteneur_about .second_artist {
+  width: 40%;
+  justify-content: center;
+  text-align: center;
+  padding: 3%;
+}
+
+.conteneur_about .third_artist {
+  width: 40%;
+  justify-content: center;
+  text-align: center;
+  padding: 3%;
+}
+
+.conteneur_about .fourth_artist {
+  width: 40%;
+  justify-content: center;
+  text-align: center;
+  padding: 3%;
+}
+
+.first_artist div img {
+  width: 30%;
+}
+
+.second_artist div img {
+  width: 30%;
+}
+
+.third_artist div img {
+  width: 30%;
+}
+
+.fourth_artist div img {
+  width: 30%;
+}
