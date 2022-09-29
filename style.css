@@ -124,18 +124,49 @@ h2 {
   padding: 3%;
 }
 
+
+
+.first_artist div p {
+  margin-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
+
+.second_artist div p {
+  margin-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.third_artist div p {
+  margin-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.fourth_artist div p {
+  margin-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .first_artist div img {
   width: 30%;
+  margin-bottom: 2vw;
 }
 
 .second_artist div img {
   width: 30%;
+  margin-bottom: 2vw;
 }
 
 .third_artist div img {
   width: 30%;
+  margin-bottom: 2vw;
 }
 
 .fourth_artist div img {
   width: 30%;
+  margin-bottom: 2vw;
 }
