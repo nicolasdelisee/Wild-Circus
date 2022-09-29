@@ -1,11 +1,11 @@
 @font-face {
-  font-family: circus;
-  src: url(/assets/fonts/circus.ttf);
+  font-family: philosopher;
+  src: url(/assets/fonts/philosopher-regular.ttf);
 }
 
 @font-face {
-  font-family: philosopher;
-  src: url(/assets/fonts/philosopher-regular.ttf);
+  font-family: Raleway;
+  src: url(/assets/fonts/Raleway-Regular.ttf);
 }
 
 :root {
@@ -14,8 +14,8 @@
   --third-color: #BD8915;
   --fourth-color: #AB0918;
   --fifth-color: #148276;
-  --title-font: circus;
-  --text-font: philosopher-regular;
+  --title-font: philosopher-regular;
+  --text-font: Raleway;
 }
 
 * {
@@ -38,7 +38,7 @@
   display: flex;
   justify-content: space-evenly;
   background-color: var(--main-color);
-  height: 75px;
+  height: 5vw;
   font-family: var(--title-font);
   background-color: var(--second-color);
   box-sizing: border-box;
@@ -47,10 +47,10 @@
 
 #main_logo {
   width: auto;
-  height: 100px;
+  height: 12vw;
   position: absolute;
-  top: 15px;
-  left: 5px;
+  top: 1%;
+  left: 3%;
 }
 
 #tickets_logo {
@@ -64,6 +64,25 @@
 
 #video_gymnaste_line {
   width: 100%;
+  height: auto;
+}
+
+#tickets_picture {
+  width: 100%;
+}
+
+#elephant {
+  width: 30vw;
+  height: auto;
+}
+
+#acrobats {
+  width: 30vw;
+  height: auto;
+}
+
+#gymnaste {
+  width: 30vw;
   height: auto;
 }
 
@@ -85,7 +104,7 @@ p {
 }
 
 h2 {
-  font-family: var(--text-font);
+  font-family: var(--title-font);
 }
 
 /* FIN D4EFFET DU COMMENTAIRE */
@@ -124,18 +143,46 @@ h2 {
   padding: 3%;
 }
 
+
+
+.first_artist div p {
+  margin-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
+
+.second_artist div p {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.third_artist div p {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.fourth_artist div p {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .first_artist div img {
   width: 30%;
+  margin-bottom: 2vw;
 }
 
 .second_artist div img {
   width: 30%;
+  margin-bottom: 2vw;
 }
 
 .third_artist div img {
   width: 30%;
+  margin-bottom: 2vw;
 }
 
 .fourth_artist div img {
   width: 30%;
+  margin-bottom: 2vw;
 }
