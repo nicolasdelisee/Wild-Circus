@@ -31,3 +31,60 @@
   width: 15%;
   height: auto;
 }
+
+
+/* Partie Anthony Tickets */
+
+#tickets h1 {
+text-align: center;
+margin: 50px;
+}
+
+#tickets_picture {
+  width: 100%;
+  height: auto;
+
+}
+
+.conteneur_tickets h2{
+  background-color: #1486;
+  text-align: center;
+  margin: 50px;
+}
+
+#tickets h3 {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 5px;
+  }
+
+  #tickets h4 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 5px;
+    }
+
+  .button_tickets{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px;
+
+
+  }
+
+  button{
+
+    display: flexbox;
+    background-color: #148276;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 100%;
+
+
+  }
+
