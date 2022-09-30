@@ -67,63 +67,106 @@
   height: auto;
 }
 
-
-.title {
-  font-family: var(--title-font);
-  color: var(--third-color);
-  position: absolute;
-  top: 150px;
+#team_picture {
+  width: 100%;
+  height: auto;
 }
 
-
-
-
-#elephant {
-  width: 65%;
-}
-
-#acrobats {
-  width: 80%;
-}
-
-#gymnaste {
-  width: 70%;
-}
-
-.conteneur_description h1 {
-  display:flex;
-  justify-content: center;
-  font-size: 3.5em;
-
-
-}
-.conteneur_description p {
+#team_title {
   font-family: var(--text-font);
-  
+  font-size: 3em;
+  text-align: center;
+  margin-top: 7vh;
 }
 
-.conteneur_description {
-  width: 60em;
-  margin: 10em
+/* IL VA FALLOIR PASSER LA POLICE PAR DEFAULT SUR TEXT FONT */
+p {
+  font-family: var(--text-font);
 }
 
-.conteneur_description article div {
+h2 {
+  font-family: var(--text-font);
+}
+
+/* FIN D4EFFET DU COMMENTAIRE */
+.conteneur_about {
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.conteneur_about .first_artist {
+  width: 40%;
   justify-content: center;
   text-align: center;
-
+  padding: 3%;
 }
 
-.discription_articles {
-  display:flex;
-  flex-direction: column;
-  align-items : center;
+.conteneur_about .second_artist {
+  width: 40%;
+  justify-content: center;
   text-align: center;
-  margin-bottom: 4em;
+  padding: 3%;
 }
 
-.discription_articles h2 {
-  font-size: 2.5em;
+.conteneur_about .third_artist {
+  width: 40%;
+  justify-content: center;
+  text-align: center;
+  padding: 3%;
+}
+
+.conteneur_about .fourth_artist {
+  width: 40%;
+  justify-content: center;
+  text-align: center;
+  padding: 3%;
 }
 
 
+
+.first_artist div p {
+  margin-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
+
+.second_artist div p {
+  margin-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.third_artist div p {
+  margin-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.fourth_artist div p {
+  margin-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.first_artist div img {
+  width: 30%;
+  margin-bottom: 2vw;
+}
+
+.second_artist div img {
+  width: 30%;
+  margin-bottom: 2vw;
+}
+
+.third_artist div img {
+  width: 30%;
+  margin-bottom: 2vw;
+}
+
+.fourth_artist div img {
+  width: 30%;
+  margin-bottom: 2vw;
+}
