@@ -136,27 +136,9 @@ button {
 
 }
 
-#team_picture {
-  width: 100%;
-  height: auto;
-}
 
-#team_title {
-  font-family: var(--text-font);
-  font-size: 3em;
-  text-align: center;
-  margin-top: 4vh;
-  margin-bottom: 2vh;
-}
 
-/* IL VA FALLOIR PASSER LA POLICE PAR DEFAULT SUR TEXT FONT */
-p {
-  font-family: var(--text-font2);
-}
 
-h2 {
-  font-family: var(--text-font);
-}
 
 /* Partie Olga*/
 #elephant {
@@ -208,7 +190,29 @@ h2 {
   font-size: 2.5em;
 }
 
+/* IL VA FALLOIR PASSER LA POLICE PAR DEFAULT SUR TEXT FONT */
+p {
+  font-family: var(--text-font2);
+}
+
+h2 {
+  font-family: var(--text-font);
+}
+
 /* FIN D4EFFET DU COMMENTAIRE */
+#team_picture {
+  width: 100%;
+  height: auto;
+}
+
+#team_title {
+  font-family: var(--text-font);
+  font-size: 3em;
+  text-align: center;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
+}
+
 .conteneur_about {
   display: flex;
   justify-content: space-around;
