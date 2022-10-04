@@ -22,8 +22,16 @@
 
   list-style: none;
   font-family: var(--text-font);
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+
 }
+
+body{
+  background-color: var(--second-color);
+}
+
 
 .navbar {
   position: fixed;
@@ -39,7 +47,6 @@
   background-color: var(--main-color);
   height: 75px;
   font-family: var(--title-font);
-  background-color: var(--second-color);
   box-sizing: border-box;
 
 }
@@ -50,6 +57,7 @@
   position: absolute;
   top: 15px;
   left: 5px;
+
 }
 
 #tickets_logo {
@@ -66,7 +74,6 @@
   height: auto;
 }
 
-<<<<<<< HEAD
 
 /* Partie Anthony Tickets */
 
@@ -101,7 +108,7 @@ margin: 50px;
 
   .button_tickets{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   margin: 100px;
 
@@ -123,7 +130,6 @@ margin: 50px;
 
   }
 
-=======
 #team_picture {
   width: 100%;
   height: auto;
@@ -172,8 +178,8 @@ h2 {
 }
 
 .conteneur_description {
-  width: 60em;
-  margin: 10em
+  width: 70%;
+  margin: auto;
 }
 
 .conteneur_description article div {
@@ -277,4 +283,3 @@ h2 {
   width: 30%;
   margin-bottom: 2vw;
 }
->>>>>>> 216706f27c04fe5160e66f7dc539794637bf7457
