@@ -297,4 +297,13 @@ h2 {
   width:100%;
   height: auto;
 }
-
+#contact_form h1{
+  text-align: center;
+  margin: 2vw 0vw 2vw 0vw;
+}
+#contact_box{
+  display: flex;
+  flex-direction: column;
+  margin: 5vw 35vw 5vw 35vw;
+  text-align: center;
+}
