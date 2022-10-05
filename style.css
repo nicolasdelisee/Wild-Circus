@@ -63,18 +63,16 @@ body {
 
 .navbar ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: var(--main-color);
-  height: 13vw;
+  height: 3.75rem;
   font-family: var(--title-font);
   box-sizing: border-box;
-
-
 }
 
 #main_logo {
   width: auto;
-  height: 20vw;
+  height: 6rem;
   position: absolute;
   top: 0vw;
   left: 0vw;
@@ -85,6 +83,59 @@ body {
   width: auto;
   height: 12vw;
 }
+
+#tickets_logo:hover{
+  transform: scale(1.5);
+}
+
+/* Burger menu */
+
+.nav-menu li {
+  transition: 2s ease;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: var(--second-color);
+}
+
+.nav-menu li:hover {
+  color: var(--fifth-color);
+}
+
+.hamburger {
+  display: block;
+  margin: 5px 10px;
+  
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--second-color);
+}
+
+.nav-menu {
+  width: 30%;
+  height: 300px;
+  gap: 5px;
+  position: absolute;
+  right: 0px;
+  top: 13vw;
+  text-align: center;
+  transition: 0.3s;
+  flex-direction: column;
+}
+
+.nav-menu.active {
+  display: none;
+}
+
+/* End of Burger menu */
 
 .video_container {
   width: 100%;
