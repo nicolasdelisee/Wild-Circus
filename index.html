@@ -25,12 +25,74 @@
   </header>
 
   <section id="homepage">
-    <div class="video_container">
-      <video id="video_gymnaste_line" autoplay="autoplay" loop="loop" muted="muted" playsinline="">
-        <source src="/assets/videos/video_gymnaste_line.mp4" type="video/mp4"> Sorry, your
-        browser doesn't support embedded videos.
-      </video>
-        <h1 id="main_title"> WELCOME TO CIRCUS</h1>
+    <!--slider-->
+    <div id="video_slider">
+    <div style="height: 100%; overflow-x: hidden; text-align: center">
+      <div class="csslider infinity" id="slider1">
+        <input type="radio" name="slides" checked="checked" id="slides_1" />
+        <input type="radio" name="slides" id="slides_2" />
+        <input type="radio" name="slides" id="slides_3" />
+        <ul>
+          <li>
+            <p>
+              <video id="video_gymnaste_line" autoplay="autoplay" loop="loop" muted="muted" playsinline="">
+                <source src="/assets/videos/video_gymnaste_line.mp4" type="video/mp4"> Sorry, your
+                browser doesn't support embedded videos.
+              </video>
+            </p>
+          </li>
+          <li>
+            <p>
+        <video id="video_gymnaste_line" autoplay="autoplay" loop="loop" muted="muted" playsinline="">
+          <source src="/assets/videos/video_acrobat.mp4" type="video/mp4"> Sorry, your
+          browser doesn't support embedded videos.
+        </video>
+            </p>
+          </li>
+          <li>
+            <p>
+              <video id="video_gymnaste_line" autoplay="autoplay" loop="loop" muted="muted" playsinline="">
+                <source src="/assets/videos/video_fire_eater.mp4" type="video/mp4"> Sorry, your
+                browser doesn't support embedded videos.
+              </video>
+            </p>
+          </li>
+          <li>
+            <p>
+              <video controls preload>
+                <source src="" />
+              </video>
+            </p>
+          </li>
+          <li>
+            <p>
+              <video controls preload>
+                <source src="" />
+              </video>
+            </p>
+          </li>
+        </ul>
+        <div class="arrows">
+          <label for="slides_1"></label>
+          <label for="slides_2"></label>
+          <label for="slides_3"></label>
+          <label class="goto-first" for="slides_1"></label>
+          <label class="goto-last" for="slides_3"></label>
+        </div>
+        <div class="navigation">
+          <div>
+            <label for="slides_1"></label>
+            <label for="slides_2"></label>
+            <label for="slides_3"></label>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Slider -->
+
+   <h1 id="main_title"> WELCOME TO CIRCUS</h1>
     </div>
 
     <div class="conteneur_description">
