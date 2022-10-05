@@ -6,7 +6,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js"></script>
+  <script src="popup.js"></script>
+  <script src="tickets.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 <body>
@@ -115,19 +117,40 @@
     <h1>Your tickets</h1>
     <img id="tickets_picture" src="assets/pictures/tickets.jpg" alt="Picture of the team" />
     <div class="conteneur_tickets">
-      <h2>Wild Circus on tour</h2>
+      <h1>Wild Circus on tour</h1>
       <article id="first_city">
         <div>
-          <h3>Paris</h3>
-          <h4>Palais des Congrès de Paris</h4>
+          <h2>Paris</h2>
+          <h3>Palais des Congrès de Paris</h3>
         </div>
         <div class="button_tickets">
-          <p>WED FEB 15 15:00</p>
-          <button>Réserver</button>
-          <p>THU FEB 16 20:00</p>
-          <button>Réserver</button>
-          <p>FRI FEB 17 20:00</p>
-          <button>Réserver</button>
+          <p>TUE FEB 21 20:00</p>
+          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+        <div class="login-popup">
+          <div class="form-popup" id="popupForm">
+            <form action="/action_page.php" class="form-container">
+              <h2>Reservation Tickets Wild Circus</h2>
+              <label for="Firstname">
+                <strong>Firstname</strong>
+              </label>
+              <input type="text" id="Firstname" placeholder="Firstname" name="Firstname" required />
+              <label for="Lastname">
+                <strong>Lastname</strong>
+              </label>
+              <input type="text" id="Lastname" placeholder="Lastname" name="Lastname" required />
+              <label for="email">
+                <strong>E-mail</strong>
+              </label>
+              <input type="text" id="email" placeholder="Votre Email" name="email" required />
+              <button type="button" class="btn"onclick="reservation()">Valid</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Fermer</button>
+            </form>
+          </div>
+        </div>
+        <p>TUE FEB 21 20:00</p>
+        <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+        <p>TUE FEB 21 20:00</p>
+        <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
         </div>
       </article>
       <article id="second_city">
@@ -137,11 +160,11 @@
         </div>
         <div class="button_tickets">
           <p>TUE FEB 21 20:00</p>
-          <button>Réserver</button>
+          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
           <p>WED FEB 22 20:00</p>
-          <button>Réserver</button>
+          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
           <p>THU FEB 23 20:00</p>
-          <button>Réserver</button>
+          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
         </div>
       </article>
       <article id="first_city">
@@ -152,11 +175,11 @@
         <p></p>
         <div class="button_tickets">
           <p>MON APR 24 15:00</p>
-          <button>Réserver</button>
+          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
           <p>TUE APR 25 20:00</p>
-          <button>Réserver</button>
+          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
           <p>WED APR 26 20:00</p>
-          <button>Réserver</button>
+          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
         </div>
       </article>
     </div>
@@ -187,4 +210,6 @@
   </footer>
 </body>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script type="text/javascript" src="script.js"></script>
 </html>
