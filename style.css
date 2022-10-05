@@ -8,6 +8,11 @@
   src: url(/assets/fonts/philosopher-regular.ttf);
 }
 
+@font-face {
+  font-family: Raleway;
+  src: url(/assets/fonts/Raleway-Regular.ttf);
+}
+
 :root {
   --main-color: #69040C;
   --second-color: #F4E1D0;
@@ -16,6 +21,7 @@
   --fifth-color: #148276;
   --title-font: circus;
   --text-font: philosopher-regular;
+  --text-font2: Raleway;
 }
 
 * {
@@ -195,12 +201,13 @@ button {
   font-family: var(--text-font);
   font-size: 3em;
   text-align: center;
-  margin-top: 7vh;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
 }
 
 /* IL VA FALLOIR PASSER LA POLICE PAR DEFAULT SUR TEXT FONT */
 p {
-  font-family: var(--text-font);
+  font-family: var(--text-font2);
 }
 
 h2 {
@@ -217,31 +224,35 @@ h2 {
 }
 
 .conteneur_about .first_artist {
-  width: 40%;
+  width: 90%;
   justify-content: center;
   text-align: center;
   padding: 3%;
+  margin-bottom: 5vw;
 }
 
 .conteneur_about .second_artist {
-  width: 40%;
+  width: 90%;
   justify-content: center;
   text-align: center;
   padding: 3%;
+  margin-bottom: 5vw;
 }
 
 .conteneur_about .third_artist {
-  width: 40%;
+  width: 90%;
   justify-content: center;
   text-align: center;
   padding: 3%;
+  margin-bottom: 5vw;
 }
 
 .conteneur_about .fourth_artist {
-  width: 40%;
+  width: 90%;
   justify-content: center;
   text-align: center;
   padding: 3%;
+  margin-bottom: 5vw;
 }
 
 
@@ -293,8 +304,7 @@ h2 {
 
 /* Section contact us*/
 
-#contact_picture{
-  width:100%;
+#contact_picture {
+  width: 100%;
   height: auto;
 }
-
