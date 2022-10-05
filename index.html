@@ -18,7 +18,7 @@
         <li><a href="#about_us">About us</a></li>
         <li><a href="#tickets"><img id="tickets_logo" src="/assets/pictures/buy_tickets.png" alt="Logo Tickets"></a>
         </li>
-        <li>Contact</li>
+        <li><a href=#contact>Contact</a></li>
         <li>FR/EN</li>
       </ul>
     </nav>
@@ -33,11 +33,11 @@
     </div>
 
     <div class="conteneur_description">
-      <h1 class="title">Welcome to the wild circus</h1>
+      <h1 id="main_title">Welcome to the wild circus!</h1>
       <article class="first_article">
         <div><img id="elephant" src="/assets/pictures/elephant.jpg" alt="Elephant and red curtain"></div>
         <div class="discription_articles">
-          <h2>Step in into the world of magic!</h2>
+          <h2>Step in into the world of magic</h2>
           <p>Get ready for one of the most spectacular jorneys. Take your seat and prepare yourself to be surprised.
           </p>
         </div>
@@ -161,8 +161,27 @@
       </article>
     </div>
   </section>
-
-
+  <section id="contact">
+    <h1>Contact us</h1>
+    <img id="contact_picture" src="assets/pictures/contact_v2.jpg" alt="Picture of an old phone" />
+    <div id="contact_form">
+      <form method="post" action="traitement.php">
+        <p id="contact_box">
+          <label for="clientname"> Your name </label><br />
+          <input type="texte" name="clientname" id="clientname" />
+          <br />
+          <label for="email"> Your email </label><br />
+          <input type="email" />
+          <br />
+          <label for="telephone"> Your number </label><br />
+          <input type="tel" />
+          <br />
+          <label for="message"> Leave us your message</label><br />
+          <textarea name="client_message" id="client_message"></textarea>
+        </p>
+      </form>
+    </div>
+  </section>
 </body>
 
 </html>
