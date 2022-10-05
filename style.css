@@ -36,8 +36,18 @@
 h1, h2, h3, h4{
   font-family: var(--title-font);
 }
-
-
+h1{
+  font-size: 2.5em;
+}
+h2{
+  font-size: 1.7em;
+}
+h3{
+  font-size: 1.5em;
+}
+p{
+  font-size: 1.1em;
+}
 body {
   background-color: var(--second-color);
 }
@@ -58,6 +68,7 @@ body {
   height: 13vw;
   font-family: var(--title-font);
   box-sizing: border-box;
+
 
 }
 
@@ -89,7 +100,6 @@ body {
 
 
 #main_title {
-  font-size: 2em;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -131,7 +141,6 @@ body {
 }
 
 .discription_articles h2 {
-  font-size: 1.8em;
   margin-top: 2vw;
 }
 
@@ -197,7 +206,6 @@ button {
 }
 
 #team_title {
-  font-size: 3em;
   text-align: center;
   margin-top: 4vh;
   margin-bottom: 2vh;
