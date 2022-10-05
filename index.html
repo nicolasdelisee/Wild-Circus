@@ -18,7 +18,7 @@
         <li><a href="#about_us">About us</a></li>
         <li><a href="#tickets"><img id="tickets_logo" src="/assets/pictures/buy_tickets.png" alt="Logo Tickets"></a>
         </li>
-        <li>Contact</li>
+        <li><a href=#contact>Contact</a></li>
         <li>FR/EN</li>
       </ul>
     </nav>
@@ -31,21 +31,23 @@
         browser doesn't support embedded videos.
       </video>
     </div>
-    
+
     <div class="conteneur_description">
-      <h1 class="title">Welcome to the wild circus</h1>
+      <h1 id="main_title">Welcome to the wild circus!</h1>
       <article class="first_article">
         <div><img id="elephant" src="/assets/pictures/elephant.jpg" alt="Elephant and red curtain"></div>
         <div class="discription_articles">
-          <h2>Step in into the world of magic!</h2>
-          <p>Get ready for one of the most spectacular jorneys. Take your seat and prepare yourself to be surprised.  </p>
+          <h2>Step in into the world of magic</h2>
+          <p>Get ready for one of the most spectacular jorneys. Take your seat and prepare yourself to be surprised.
+          </p>
         </div>
       </article>
       <article class="second_article">
         <div><img id="acrobats" src="/assets/pictures/acrobats.jpg" alt="Acrobats en action"></div>
         <div class="discription_articles">
           <h2> Discover the impossible and beyond </h2>
-          <p> Forget everything that you have ever known about magic. You will step into a new world that you could never imagine. </p>
+          <p> Forget everything that you have ever known about magic. You will step into a new world that you could
+            never imagine. </p>
         </div>
       </article>
       <article class="third_article">
@@ -120,11 +122,11 @@
           <h4>Palais des Congrès de Paris</h4>
         </div>
         <div class="button_tickets">
-          <p>WED  FEB  15   15:00</p>
+          <p>WED FEB 15 15:00</p>
           <button>Réserver</button>
-          <p>THU  FEB  16   20:00</p>
+          <p>THU FEB 16 20:00</p>
           <button>Réserver</button>
-          <p>FRI  FEB  17   20:00</p>
+          <p>FRI FEB 17 20:00</p>
           <button>Réserver</button>
         </div>
       </article>
@@ -134,11 +136,11 @@
           <h4>Arkéna Arena</h4>
         </div>
         <div class="button_tickets">
-          <p>TUE  FEB  21   20:00</p>
+          <p>TUE FEB 21 20:00</p>
           <button>Réserver</button>
-          <p>WED  FEB  22   20:00</p>
+          <p>WED FEB 22 20:00</p>
           <button>Réserver</button>
-          <p>THU  FEB  23   20:00</p>
+          <p>THU FEB 23 20:00</p>
           <button>Réserver</button>
         </div>
       </article>
@@ -149,18 +151,37 @@
         </div>
         <p></p>
         <div class="button_tickets">
-          <p>MON  APR  24   15:00</p>
+          <p>MON APR 24 15:00</p>
           <button>Réserver</button>
-          <p>TUE  APR  25   20:00</p>
+          <p>TUE APR 25 20:00</p>
           <button>Réserver</button>
-          <p>WED  APR  26   20:00</p>
+          <p>WED APR 26 20:00</p>
           <button>Réserver</button>
         </div>
       </article>
     </div>
   </section>
-
-
+  <section id="contact">
+    <h1>Contact us</h1>
+    <img id="contact_picture" src="assets/pictures/contact_v2.jpg" alt="Picture of an old phone" />
+    <div id="contact_form">
+      <form method="post" action="traitement.php">
+        <p id="contact_box">
+          <label for="clientname"> Your name </label><br />
+          <input type="texte" name="clientname" id="clientname" />
+          <br />
+          <label for="email"> Your email </label><br />
+          <input type="email" />
+          <br />
+          <label for="telephone"> Your number </label><br />
+          <input type="tel" />
+          <br />
+          <label for="message"> Leave us your message</label><br />
+          <textarea name="client_message" id="client_message"></textarea>
+        </p>
+      </form>
+    </div>
+  </section>
 </body>
 
 </html>

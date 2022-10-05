@@ -28,7 +28,7 @@
 
 }
 
-body{
+body {
   background-color: var(--second-color);
 }
 
@@ -74,84 +74,21 @@ body{
   height: auto;
 }
 
-
-/* Partie Anthony Tickets */
-
-#tickets h1 {
-text-align: center;
-margin: 50px;
-}
-
-#tickets_picture {
-  width: 100%;
-  height: auto;
-
-}
-
-.conteneur_tickets h2{
-  background-color: #1486;
-  text-align: center;
-  margin: 50px;
-}
-
-#tickets h3 {
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 5px;
-  }
-
-  #tickets h4 {
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 5px;
-    }
-
-  .button_tickets{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 100px;
-
-
-  }
-
-  button{
-
-    display: flexbox;
-    background-color: #148276;
-    border-radius: 10px;
-    border: 4px double #cccccc;
-    color: #eeeeee;
-    text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 100%;
-
-
-  }
-
-#team_picture {
-  width: 100%;
-  height: auto;
-}
-
-#team_title {
-  font-family: var(--text-font);
-  font-size: 3em;
-  text-align: center;
-  margin-top: 7vh;
-}
-
-/* IL VA FALLOIR PASSER LA POLICE PAR DEFAULT SUR TEXT FONT */
-p {
-  font-family: var(--text-font);
-}
-
-h2 {
-  font-family: var(--text-font);
-}
-
 /* Partie Olga*/
+
+#homepage h1 {
+  font-family: var(--title-font);
+}
+
+#main_title {
+  font-size: 2em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
 #elephant {
   width: 65%;
 }
@@ -164,17 +101,8 @@ h2 {
   width: 70%;
 }
 
-.conteneur_description h1 {
-  display: flex;
-  justify-content: center;
-  font-size: 3.5em;
-
-
-}
-
 .conteneur_description p {
   font-family: var(--text-font);
-
 }
 
 .conteneur_description {
@@ -198,8 +126,87 @@ h2 {
 }
 
 .discription_articles h2 {
-  font-size: 2.5em;
+  font-size: 1.8em;
+  margin-top: 2vw;
 }
+
+
+/* Partie Anthony Tickets */
+
+#tickets h1 {
+  text-align: center;
+  margin: 50px;
+}
+
+#tickets_picture {
+  width: 100%;
+  height: auto;
+
+}
+
+.conteneur_tickets h2 {
+  background-color: #1486;
+  text-align: center;
+  margin: 50px;
+}
+
+#tickets h3 {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 5px;
+}
+
+#tickets h4 {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 5px;
+}
+
+.button_tickets {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 100px;
+
+
+}
+
+button {
+
+  display: flexbox;
+  background-color: #148276;
+  border-radius: 10px;
+  border: 4px double #cccccc;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 100%;
+
+
+}
+
+#team_picture {
+  width: 100%;
+  height: auto;
+}
+
+#team_title {
+  font-family: var(--text-font);
+  font-size: 3em;
+  text-align: center;
+  margin-top: 7vh;
+}
+
+/* IL VA FALLOIR PASSER LA POLICE PAR DEFAULT SUR TEXT FONT */
+p {
+  font-family: var(--text-font);
+}
+
+h2 {
+  font-family: var(--text-font);
+}
+
 
 /* FIN D4EFFET DU COMMENTAIRE */
 .conteneur_about {
@@ -283,3 +290,11 @@ h2 {
   width: 30%;
   margin-bottom: 2vw;
 }
+
+/* Section contact us*/
+
+#contact_picture{
+  width:100%;
+  height: auto;
+}
+
