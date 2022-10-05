@@ -25,12 +25,32 @@
   </header>
 
   <section id="homepage">
-    <div class="video_container">
-      <video id="video_gymnaste_line" autoplay="autoplay" loop="loop" muted="muted" playsinline="">
-        <source src="/assets/videos/video_gymnaste_line.mp4" type="video/mp4"> Sorry, your
-        browser doesn't support embedded videos.
-      </video>
+    <div id="carrousel">
+      <div class="video_container">
+        <!-- <video id="video_gymnaste_line" autoplay="autoplay" loop="loop" muted="muted" playsinline="">
+          <source src="/assets/videos/video_gymnaste_line.mp4" type="video/mp4"> Sorry, your
+          browser doesn't support embedded videos.
+        </video>-->
+        <img src="/assets/pictures/fleche_gauche.png" class="carrousel_button" id="g">
+        <img src="/assets/pictures/fleche_droite.png" class="carrousel_button" id="d">
+      </div>
     </div>
+    <script>
+      document.body.onload = function () {
+        nbr = 3;
+        p = 0;
+        container = document.getElementsByClassName("video_container");
+        g = document.getElementById("g");
+        d = document.getElementById("d");
+        container.style.width = (800 * nbr) + "px";
+        for (let i = 1; i <= nbr; i++) {
+          div = documement.creatElement("div");
+          div.className = "video";
+          div.style.backgroundImage = "url('assets/videos/video1.mp4')";
+          container.appendChild(div);
+        }
+      }
+    </script>
 
     <div class="conteneur_description">
       <h1 class="title">Welcome to the wild circus</h1>
