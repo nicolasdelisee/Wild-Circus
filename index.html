@@ -2,14 +2,15 @@
 <html>
 
 <head>
+  <div id="overlay" onclick="off()"></div>
   <title>Wild Circus show</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css" />
-  <script src="popup.js"></script>
   <script src="tickets.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
+
 
 <body>
   <header>
@@ -19,20 +20,20 @@
               alt="Logo Wild Circus" /></a></li>
         <li><a href="#tickets"><img id="tickets_logo" src="/assets/pictures/buy_tickets.png" alt="Logo Tickets"></a>
         </li>
-
         <li class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+          <span class="bar-top"></span>
+          <span class="bar-mid"></span>
+          <span class="bar-bot"></span>
         </li>
       </ul>
-
-      <ul class="nav-menu">
-        <li><a href="#about_us">About us</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#">EN/FR</a></li>
-      </ul>
     </nav>
+    <ul class="offscreen-menu">
+      <li class="list-menu"><a href="#about_us">About us</a></li>
+      <hr class="offscreen-menu-line" />
+      <li class="list-menu"><a href="#contact">Contact</a></li>
+      <hr class="offscreen-menu-line" />
+      <li><a href="#">EN/FR</a></li>
+    </ul>
   </header>
 
   <section id="homepage">
@@ -47,7 +48,7 @@
             <li>
               <p>
                 <video id="video_gymnaste_line" autoplay="autoplay" loop="loop" muted="muted" playsinline="">
-                  <source src="/assets/videos/video_gymnaste_line.mp4" type="video/mp4"> Sorry, your
+                  <source src="/assets/videos/video_fire_eater.mp4" type="video/mp4"> Sorry, your
                   browser doesn't support embedded videos.
                 </video>
               </p>
@@ -63,7 +64,7 @@
             <li>
               <p>
                 <video id="video_gymnaste_line" autoplay="autoplay" loop="loop" muted="muted" playsinline="">
-                  <source src="/assets/videos/video_fire_eater.mp4" type="video/mp4"> Sorry, your
+                  <source src="/assets/videos/video_gymnaste_line.mp4" type="video/mp4"> Sorry, your
                   browser doesn't support embedded videos.
                 </video>
               </p>
@@ -83,13 +84,6 @@
               </p>
             </li>
           </ul>
-          <div class="arrows">
-            <label for="slides_1"></label>
-            <label for="slides_2"></label>
-            <label for="slides_3"></label>
-            <label class="goto-first" for="slides_1"></label>
-            <label class="goto-last" for="slides_3"></label>
-          </div>
           <div class="navigation">
             <div>
               <label for="slides_1"></label>
@@ -135,12 +129,12 @@
   </section>
   <section id="about_us">
     <img id="team_picture" src="assets/pictures/team_v2.jpg" alt="Picture of the team" />
-    <h1 id="team_title">Wild Circus Team</h1>
+    <h2 id="team_title">Wild Circus Team</h2>
     <div class="conteneur_about">
       <article class="first_artist">
         <div><img src="/assets/pictures/beatrice.png" alt="photo de béatrice"></div>
         <div>
-          <h2>Béatrice DUPREZ</h2>
+          <h3>Béatrice DUPREZ</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit quibusdam officiis alias
             velit exercitationem ex excepturi explicabo earum? Voluptates suscipit repudiandae, illo unde aut eaque a
             assumenda aliquam ea?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae rem voluptatem
@@ -152,7 +146,7 @@
       <article class="second_artist">
         <div><img src="/assets/pictures/jean.png" alt="photo de jean"></div>
         <div>
-          <h2>Jean LECORNU</h2>
+          <h3>Jean LECORNU</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit quibusdam officiis alias
             velit exercitationem ex excepturi explicabo earum? Voluptates suscipit repudiandae, illo unde aut eaque a
             assumenda aliquam ea?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae rem voluptatem
@@ -164,7 +158,7 @@
       <article class="third_artist">
         <div><img src="/assets/pictures/michel.png" alt="photo de michel"></div>
         <div>
-          <h2>Michel ESPINOSA</h2>
+          <h3>Michel ESPINOSA</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit quibusdam officiis alias
             velit exercitationem ex excepturi explicabo earum? Voluptates suscipit repudiandae, illo unde aut eaque a
             assumenda aliquam ea?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae rem voluptatem
@@ -176,7 +170,7 @@
       <article class="fourth_artist">
         <div><img src="/assets/pictures/valerie.png" alt="photo de valerie"></div>
         <div>
-          <h2>Valérie DUPIELET</h2>
+          <h3>Valérie DUPIELET</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit quibusdam officiis alias
             velit exercitationem ex excepturi explicabo earum? Voluptates suscipit repudiandae, illo unde aut eaque a
             assumenda aliquam ea?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae rem voluptatem
@@ -190,8 +184,7 @@
   </section>
 
   <section id="tickets">
-    <h1>Your tickets</h1>
-    <img id="tickets_picture" src="assets/pictures/tickets.jpg" alt="Picture of the team" />
+    <img id="tickets_picture" src="assets/pictures/tickets2.jpg" alt="Picture of the team" />
     <div class="conteneur_tickets">
       <h1>Wild Circus on tour</h1>
       <article id="first_city">
@@ -200,8 +193,10 @@
           <h3>Palais des Congrès de Paris</h3>
         </div>
         <div class="button_tickets">
-          <p>TUE FEB 21 20:00</p>
-          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+          <div class="btn-tickets">
+            <p>TUE FEB 21 20:00</p>
+            <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+          </div>
           <div class="login-popup">
             <div class="form-popup" id="popupForm">
               <form action="/action_page.php" class="form-container">
@@ -219,14 +214,18 @@
                 </label>
                 <input type="text" id="email" placeholder="Votre Email" name="email" required />
                 <button type="button" class="btn" onclick="popup()">Valid</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Fermer</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
               </form>
             </div>
           </div>
-          <p>TUE FEB 21 20:00</p>
-          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
-          <p>TUE FEB 21 20:00</p>
-          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+          <div class="btn-tickets">
+            <p>TUE FEB 21 20:00</p>
+            <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+          </div>
+          <div class="btn-tickets">
+            <p>TUE FEB 21 20:00</p>
+            <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+          </div>
         </div>
       </article>
       <article id="second_city">
@@ -235,12 +234,18 @@
           <h3>Arkéna Arena</h3>
         </div>
         <div class="button_tickets">
-          <p>TUE FEB 21 20:00</p>
-          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
-          <p>WED FEB 22 20:00</p>
-          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
-          <p>THU FEB 23 20:00</p>
-          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+          <div class="btn-tickets">
+            <p>TUE FEB 21 20:00</p>
+            <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+          </div>
+          <div class="btn-tickets">
+            <p>TUE FEB 21 20:00</p>
+            <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+          </div>
+          <div class="btn-tickets">
+            <p>TUE FEB 21 20:00</p>
+            <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+          </div>
         </div>
       </article>
       <article id="first_city">
@@ -250,12 +255,18 @@
         </div>
         <p></p>
         <div class="button_tickets">
-          <p>MON APR 24 15:00</p>
-          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
-          <p>TUE APR 25 20:00</p>
-          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
-          <p>WED APR 26 20:00</p>
-          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+          <div class="btn-tickets">
+            <p>TUE FEB 21 20:00</p>
+            <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+          </div>
+          <div class="btn-tickets">
+            <p>TUE FEB 21 20:00</p>
+            <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+          </div>
+          <div class="btn-tickets">
+            <p>TUE FEB 21 20:00</p>
+            <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+          </div>
         </div>
       </article>
     </div>
@@ -268,7 +279,7 @@
         <h1>Contact us</h1>
         <form>
           <div class="form_groupe">
-            <label for="clientname"> Your name </label>
+            <label for="clientname"> Your name and first name </label>
             <input type="texte" name="clientname" id="clientname" placeholder="Hubert Bonisseur de la Bath"
               maxlength="30" minlength="3" />
             <img src="/assets/pictures/Check_green.svg" alt="check icon" class="icone_verif">
@@ -276,7 +287,7 @@
           </div>
           <div class="form_groupe">
             <label for="email"> Enter your Email adress </label>
-            <input type="email" name="emailadress" id="email" placeholder="hubert.bonisseur.de.la.bath@gmail.com " />
+            <input type="email" name="emailadress" id="email" placeholder="hubert.bonisseur.dlb@gmail.com " />
             <img src="/assets/pictures/Check_green.svg" alt="check icon" class="icone_verif">
             <span class="message_alerte">Enter a valid Email</span>
           </div>
@@ -290,10 +301,10 @@
             <label for="message"> Leave us your message </label><br />
             <textarea name="client_message" id="client_message" placeholder="Leave your message here..."></textarea>
           </div>
-          <button type="submit">Send</button>
+          <button onclick="popup()" type="submit">Send</button>
         </form>
       </div>
-    </div>
+
   </section>
   <footer>
     <div> <img id="logo_reseaux" src="/assets/pictures/logo_reseaux.png" alt="logo des réseaux sociaux" /></div>
@@ -304,7 +315,9 @@
   </footer>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="script.js"></script>
-  <script src="/contact.js"> </script>
+  <script src="contact.js"> </script>
+
+  </div>
 </body>
 
 
