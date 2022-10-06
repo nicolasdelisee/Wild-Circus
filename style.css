@@ -338,10 +338,6 @@ video {
   background-size: cover;
 }
 
-/*p {
-  margin-left: 3em;
-}
-*/
 /* slider*/
 
 
@@ -351,7 +347,7 @@ video {
   justify-content: center;
   margin: 3vw 10vw 2vw 10vw;
   position: absolute;
-  top: 15%;
+  top: 11%;
   z-index: 0;
   color: rgb(244, 225, 208, 0.8);
   font-size: 10vw;
@@ -627,24 +623,28 @@ button:hover span:after {
   padding-left: 10%;
   padding-right: 10%;
 
+
 }
 
 .second_artist div p {
   margin-top: 2%;
   padding-left: 10%;
   padding-right: 10%;
+
 }
 
 .third_artist div p {
   margin-top: 2%;
   padding-left: 10%;
   padding-right: 10%;
+
 }
 
 .fourth_artist div p {
   margin-top: 2%;
   padding-left: 10%;
   padding-right: 10%;
+
 }
 
 .first_artist div img {
@@ -789,8 +789,8 @@ footer p {
   font-size: 0.6em;
 }
 
-#line {
-  width: 80%;
+.otherline {
+  width: 70%;
 }
 
 .line {
@@ -803,12 +803,11 @@ footer p {
     height: 25vh;
 
   }
-  }
+}
 
-@media screen and (min-width: 601px) { 
+@media screen and (min-width: 601px) {
 
 .navbar ul {
-  background-color: var(--main-color);
   height: 2.5rem;
 }
 
@@ -864,5 +863,41 @@ footer p {
   display: none;
 }
 
-/* End of nicolasbranch*/
+ /*paulBRANCH*/
+  input {
+
+    width: 50vw;
+  }
+
+  textarea {
+
+    width: 50vw;
+    height: 30vh;
+  }
+
+  .box_login h1 {
+    margin-bottom: 50px;
+    margin-top: 70px;
+  }
+
+  .conteneur_about .first_artist {
+    width: 40%;
+
+  }
+
+  .conteneur_about .second_artist {
+    width: 40%;
+
+  }
+
+  .conteneur_about .third_artist {
+    width: 40%;
+
+  }
+
+  .conteneur_about .fourth_artist {
+    width: 40%;
+
+  }
+
 }
