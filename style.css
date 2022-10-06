@@ -814,7 +814,8 @@ footer p {
   .first_article {
     display: flex;
   }
-    .second_article {
+
+  .second_article {
     display: flex;
     flex-direction: row-reverse;
     margin: 5vh 0;
@@ -825,23 +826,23 @@ footer p {
     margin-bottom: 5vh;
   }
 
-.about-us-navbar {
-  position: relative;
-  width: 40%;
-  right: 100px;
-}
+  .about-us-navbar {
+    position: relative;
+    width: 40%;
+    right: 100px;
+  }
 
-.contact-navbar {
-  position: relative;
-  width: 40%;
-  left: 100px;
-}
+  .contact-navbar {
+    position: relative;
+    width: 40%;
+    left: 100px;
+  }
 
   .navbar ul {
     height: 2.5rem;
   }
 
-/*
+  /*
 .wide-screen-menu li a:hover {
   font-size: 1.11em;
   font-weight: bold;
@@ -849,10 +850,10 @@ footer p {
 }
 */
 
-#main_logo {
-  height: 8.5rem;
-  left: 0rem;
-}
+  #main_logo {
+    height: 8.5rem;
+    left: 0rem;
+  }
 
 
   .wide-screen-menu li a {
@@ -860,10 +861,10 @@ footer p {
     color: var(--second-color);
   }
 
-#tickets_logo:hover {
-  transform: scale(1.1);
-  transition: all 0.3s ease-out;
-}
+  #tickets_logo:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-out;
+  }
 
 
   #main_logo {
@@ -922,7 +923,8 @@ footer p {
     width: 40%;
 
   }
-/* Partie Anthony*/
+
+  /* Partie Anthony*/
 
   .btn-tickets {
     display: flex;
@@ -931,31 +933,34 @@ footer p {
     width: 65%;
 
 
-}
-button {
-  background-color: #148276;
-  border-radius: 10px;
-  border: 4px double #cccccc;
-  color: #eeeeee;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 400px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-/* Styles pour le conteneur de forme */
-.form-container {
-  display: flex;
-  flex-direction: column;
-  width: 40vw;
-  padding: 20px;
-  background: #F4E1D0;
-  border-radius: 30px;
-}
-.paraf{
-  width: 30%;
-}
+  }
+
+  button {
+    background-color: #148276;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 400px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  /* Styles pour le conteneur de forme */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    padding: 20px;
+    background: #F4E1D0;
+    border-radius: 30px;
+  }
+
+  .paraf {
+    width: 30%;
+  }
 
 }

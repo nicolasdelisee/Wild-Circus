@@ -38,6 +38,8 @@ function openForm() {
   document.getElementsByName("Firstname")[0].value = "";
   document.getElementsByName("Lastname")[0].value = "";
   document.getElementsByName("email")[0].value = "";
+
+
 }
 function closeForm() {
   document.getElementById("popupForm").style.display = "none";
