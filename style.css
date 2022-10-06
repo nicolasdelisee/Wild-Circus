@@ -355,10 +355,6 @@ video {
   background-size: cover;
 }
 
-/*p {
-  margin-left: 3em;
-}
-*/
 /* slider*/
 
 
@@ -368,7 +364,7 @@ video {
   justify-content: center;
   margin: 3vw 10vw 2vw 10vw;
   position: absolute;
-  top: 15%;
+  top: 11%;
   z-index: 0;
   color: rgb(244, 225, 208, 0.8);
   font-size: 10vw;
@@ -806,8 +802,8 @@ footer p {
   font-size: 0.6em;
 }
 
-#line {
-  width: 80%;
+.otherline {
+  width: 70%;
 }
 
 .line {
@@ -820,4 +816,26 @@ footer p {
     height: 25vh;
 
   }
+}
+
+@media screen and (min-width: 600px) {
+  .otherline {
+    width: 20%;
+  }
+
+  .first_article {
+    display: flex;
+  }
+
+  .second_article {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 5vh 0;
+  }
+
+  .third_article {
+    display: flex;
+    margin-bottom: 5vh;
+  }
+
 }
