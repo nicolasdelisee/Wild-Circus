@@ -5,7 +5,7 @@ const allImg = document.querySelectorAll('.icone_verif');
 const allAlert = document.querySelectorAll('.message_alerte');
 
 inpUser.addEventListener('input', (e) => {
-    if (e.target.value.length >= 5) {
+    if (e.target.value.length >= 5 && e.target.value.length <= 30) {
         allImg[0].style.display = "inline";
         allImg[0].src = "/assets/pictures/Check_green.svg"
         allAlert[0].style.display = "none";
@@ -31,4 +31,18 @@ inpMail.addEventListener('input', (e) => {
         allAlert[1].style.display = "inline";
     }
 
+})
+inpPhone.addEventListener('input', (e) => {
+
+    const regexPhone = /^[0-9+]+$/;
+    if (e.target.value.length >= 8 && e.target.value.search(regexPhone) === 0) {
+        allImg[2].style.display = "inline";
+        allImg[2].src = "/assets/pictures/Check_green.svg"
+        allAlert[2].style.display = "none";
+    }
+    else if (e.target.value.search(regexPhone) === -1) {
+        allImg[2].style.display = "inline";
+        allImg[2].src = "/assets/pictures/Check_red.svg"
+        allAlert[2].style.display = "inline";
+    }
 })
