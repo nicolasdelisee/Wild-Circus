@@ -141,6 +141,8 @@ body {
   background-color: var(--main-color);
   transition: 2s;
   flex-direction: column;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;;
 }
 
 .offscreen-menu.active {
