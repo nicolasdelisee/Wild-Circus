@@ -750,7 +750,7 @@ button:hover span:after {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid 2px black;
+
 }
 
 .box_login {
