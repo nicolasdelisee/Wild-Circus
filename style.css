@@ -818,39 +818,16 @@ footer p {
   }
   }
 
-  @media screen and (min-width: 601px) { 
-
-.navbar {
-  position: fixed;
-  top: 0;
-  z-index: 10;
-  width: 100%;
-}
-
-
-.navbar ul {
-
-  background-color: var(--main-color);
-  height: 5em;
-  font-family: var(--title-font);
-}
+@media screen and (min-width: 601px) { 
 
 #main_logo {
   height: 7rem;
-  top: 0vw;
   left: 1rem;
-
 }
 
 #tickets_logo {
-  position: absolute;
-  top: 0.2rem;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
-  height: 3.5rem;
+  top: 0.5rem;
+  height: 5rem;
   z-index: 30;
 }
 
@@ -925,5 +902,5 @@ footer p {
   width: 5rem;
 }
 
-/* End of Burger menu */
+/* End of nicolasbranch*/
 }
