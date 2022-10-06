@@ -1,9 +1,9 @@
 console.log("Hello circus");
 
 const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+const offscreenMenu = document.querySelector(".offscreen-menu");
 
 hamburger.addEventListener("click", () => {
    hamburger.classList.toggle("active");
-   navMenu.classList.toggle("active");
-})
+   offscreenMenu.classList.toggle("active");
+});
