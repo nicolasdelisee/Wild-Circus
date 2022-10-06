@@ -636,24 +636,28 @@ button:hover span:after {
   padding-left: 10%;
   padding-right: 10%;
 
+
 }
 
 .second_artist div p {
   margin-top: 2%;
   padding-left: 10%;
   padding-right: 10%;
+
 }
 
 .third_artist div p {
   margin-top: 2%;
   padding-left: 10%;
   padding-right: 10%;
+
 }
 
 .fourth_artist div p {
   margin-top: 2%;
   padding-left: 10%;
   padding-right: 10%;
+
 }
 
 .first_artist div img {
@@ -815,6 +819,18 @@ footer p {
 }
 
 @media screen and (min-width: 601px) {
+
+
+  #main_logo {
+    height: 7rem;
+    left: 1rem;
+  }
+
+  #tickets_logo {
+    top: 0.5rem;
+    height: 5rem;
+    z-index: 30;
+
   .otherline {
     width: 20%;
   }
@@ -832,89 +848,117 @@ footer p {
   .third_article {
     display: flex;
     margin-bottom: 5vh;
+
   }
 
-#main_logo {
-  height: 7rem;
-  left: 1rem;
-}
+  #tickets_logo:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease-out;
+  }
 
-#tickets_logo {
-  top: 0.5rem;
-  height: 5rem;
-  z-index: 30;
-}
+  /* Burger menu */
 
-#tickets_logo:hover {
-  transform: scale(1.1);
-  transition: all 0.4s ease-out;
-}
-
-/* Burger menu */
-
-.hamburger {
-  display: block;
-  position: absolute;
-  right: 1.5rem;
-  top: 0.9rem;
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 1.5rem;
+    top: 0.9rem;
 
 
-}
+  }
 
-.bar-top,
-.bar-bot,
-.bar-mid {
-  display: block;
-  width: 1.5rem;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: var(--second-color);
+  .bar-top,
+  .bar-bot,
+  .bar-mid {
+    display: block;
+    width: 1.5rem;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--second-color);
 
-}
+  }
 
-.offscreen-menu {
-  display: none;
-  z-index: 1;
-  width: 4.2rem;
-  padding: 0.8rem 1.2rem;
-  gap: 0.9rem;
-  position: fixed;
-  right: 0px;
-  top: 3.75rem;
-  text-align: center;
-  align-items: center;
-  background-color: var(--main-color);
-  transition: 2s;
-  flex-direction: column;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  ;
-}
+  .offscreen-menu {
+    display: none;
+    z-index: 1;
+    width: 4.2rem;
+    padding: 0.8rem 1.2rem;
+    gap: 0.9rem;
+    position: fixed;
+    right: 0px;
+    top: 3.75rem;
+    text-align: center;
+    align-items: center;
+    background-color: var(--main-color);
+    transition: 2s;
+    flex-direction: column;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    ;
+  }
 
-.offscreen-menu.active {
-  display: flex;
-}
+  .offscreen-menu.active {
+    display: flex;
+  }
 
 
-.offscreen-menu li a {
-  text-decoration: none;
-  color: var(--second-color);
-}
+  .offscreen-menu li a {
+    text-decoration: none;
+    color: var(--second-color);
+  }
 
-.offscreen-menu li a:hover {
-  font-size: 1.11em;
-  font-weight: bold;
-  transition: all 0.5s ease;
-}
+  .offscreen-menu li a:hover {
+    font-size: 1.11em;
+    font-weight: bold;
+    transition: all 0.5s ease;
+  }
 
-.offscreen-menu-line {
-  display: block;
-  border: 0;
-  border-top: 1px solid var(--third-color);
-  width: 5rem;
-}
+  .offscreen-menu-line {
+    display: block;
+    border: 0;
+    border-top: 1px solid var(--third-color);
+    width: 5rem;
+  }
 
-/* End of nicolasbranch*/
+  /* End of nicolasbranch*/
+  /*paulBRANCH*/
+  input {
+
+    width: 50vw;
+  }
+
+  textarea {
+
+    width: 50vw;
+    height: 30vh;
+  }
+
+  .box_login h1 {
+    margin-bottom: 50px;
+    margin-top: 70px;
+  }
+
+  .conteneur_about .first_artist {
+    width: 40%;
+
+  }
+
+  .conteneur_about .second_artist {
+    width: 40%;
+
+  }
+
+  .conteneur_about .third_artist {
+    width: 40%;
+
+  }
+
+  .conteneur_about .fourth_artist {
+    width: 40%;
+
+  }
+
+
 }
