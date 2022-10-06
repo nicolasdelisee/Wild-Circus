@@ -1,6 +1,6 @@
 @font-face {
-  font-family: circus;
-  src: url(/assets/fonts/circus.ttf);
+  font-family: PlayfairDisplay-Regular;
+  src: url(/assets/fonts/PlayfairDisplay-Regular.ttf);
 }
 
 @font-face {
@@ -19,9 +19,9 @@
   --third-color: #BD8915;
   --fourth-color: #AB0918;
   --fifth-color: #148276;
-  --title-font: circus;
-  --text-font: philosopher-regular;
-  --text-font2: Raleway;
+  --title-font: PlayfairDisplay-Regular;
+  --text-font: Raleway;
+
 }
 
 * {
@@ -32,6 +32,29 @@
   padding: 0;
 
 
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--title-font);
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.1em;
 }
 
 body {
@@ -51,24 +74,25 @@ body {
   display: flex;
   justify-content: space-evenly;
   background-color: var(--main-color);
-  height: 75px;
+  height: 13vw;
   font-family: var(--title-font);
   box-sizing: border-box;
+
 
 }
 
 #main_logo {
   width: auto;
-  height: 100px;
+  height: 20vw;
   position: absolute;
-  top: 15px;
-  left: 5px;
+  top: 0vw;
+  left: 0vw;
 
 }
 
 #tickets_logo {
   width: auto;
-  height: 70px;
+  height: 12vw;
 }
 
 .video_container {
@@ -82,12 +106,9 @@ body {
 
 /* Partie Olga*/
 
-#homepage h1 {
-  font-family: var(--title-font);
-}
+
 
 #main_title {
-  font-size: 2em;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -107,9 +128,6 @@ body {
   width: 70%;
 }
 
-.conteneur_description p {
-  font-family: var(--text-font);
-}
 
 .conteneur_description {
   width: 70%;
@@ -132,7 +150,6 @@ body {
 }
 
 .discription_articles h2 {
-  font-size: 1.8em;
   margin-top: 2vw;
 }
 
@@ -193,29 +210,17 @@ button {
 }
 
 #team_picture {
+  margin-top: 13vw;
   width: 100%;
   height: auto;
 }
 
 #team_title {
-  font-family: var(--text-font);
-  font-size: 3em;
   text-align: center;
   margin-top: 4vh;
   margin-bottom: 2vh;
 }
 
-/* IL VA FALLOIR PASSER LA POLICE PAR DEFAULT SUR TEXT FONT */
-p {
-  font-family: var(--text-font2);
-}
-
-h2 {
-  font-family: var(--text-font);
-}
-
-
-/* FIN D4EFFET DU COMMENTAIRE */
 .conteneur_about {
   display: flex;
   justify-content: space-around;
@@ -307,4 +312,99 @@ h2 {
 #contact_picture {
   width: 100%;
   height: auto;
+  margin-top: 12vw;
+}
+
+.box_login h1 {
+  text-align: center;
+  margin-top: 400px;
+
+}
+
+.box_contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_login {
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+
+.form_groupe {
+  position: relative;
+}
+
+label {
+  margin: 5px 23px;
+  font-size: 20px;
+  padding: 10px 0 5px 0;
+  display: block;
+  position: relative;
+}
+
+input {
+  display: block;
+  margin: 10px 20px 20px 20px;
+  outline: 0;
+  background: rgb(226, 226, 226);
+  width: 400px;
+  border: 0;
+  padding: 10px 12px;
+  border-radius: 3px;
+  font-size: 22px;
+  border: 1px solid rgba(0, 0, O, 0.3);
+
+}
+
+textarea {
+  display: block;
+  margin: 10px 20px 20px 20px;
+  outline: 0;
+  background: rgb(226, 226, 226);
+  width: 400px;
+  height: 300px;
+  border: 0;
+  padding: 10px 12px;
+  border-radius: 3px;
+  font-size: 22px;
+  border: 1px solid rgba(0, 0, O, 0.3);
+}
+
+.form_groupe img {
+  text-align: center;
+  width: 40px;
+}
+
+.icone_verif {
+  width: 30px;
+  position: absolute;
+  right: 27px;
+  top: 50px;
+  display: none;
+}
+
+.message_alerte {
+  margin: 0px 23px;
+  color: crimson;
+  display: none;
+}
+
+.box_login form button {
+  display: block;
+  margin: 30px auto;
+  outline: 0;
+  width: 90%;
+  border: 0;
+  padding: 15px;
+  border-radius: 3px;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+.box_login form button:hover {
+  opacity: 0.8;
 }

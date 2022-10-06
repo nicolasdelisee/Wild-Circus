@@ -6,7 +6,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -60,9 +60,8 @@
     </div>
   </section>
   <section id="about_us">
-    <h1>About us</h1>
     <img id="team_picture" src="assets/pictures/team_v2.jpg" alt="Picture of the team" />
-    <h2 id="team_title">Wild Circus Team</h2>
+    <h1 id="team_title">Wild Circus Team</h1>
     <div class="conteneur_about">
       <article class="first_artist">
         <div><img src="/assets/pictures/beatrice.png" alt="photo de béatrice"></div>
@@ -162,26 +161,43 @@
     </div>
   </section>
   <section id="contact">
-    <h1>Contact us</h1>
     <img id="contact_picture" src="assets/pictures/contact_v2.jpg" alt="Picture of an old phone" />
-    <div id="contact_form">
-      <form method="post" action="traitement.php">
-        <p id="contact_box">
-          <label for="clientname"> Your name </label><br />
-          <input type="texte" name="clientname" id="clientname" />
-          <br />
-          <label for="email"> Your email </label><br />
-          <input type="email" />
-          <br />
-          <label for="telephone"> Your number </label><br />
-          <input type="tel" />
-          <br />
-          <label for="message"> Leave us your message</label><br />
-          <textarea name="client_message" id="client_message"></textarea>
-        </p>
-      </form>
+    <div class="box_contact">
+      <div class="box_login">
+        <h1>Contact us</h1>
+        <form>
+          <div class="form_groupe">
+            <label for="clientname"> Your name </label>
+            <input type="texte" name="clientname" id="clientname" placeholder="Hubert Bonisseur de la Bath"
+              maxlength="30" minlength="3" />
+            <img src="/assets/pictures/Check_green.svg" alt="check icon" class="icone_verif">
+            <span class="message_alerte">Write you name and first name min 5 character</span>
+          </div>
+          <div class="form_groupe">
+            <label for="email"> Enter your Email adress </label>
+            <input type="email" name="emailadress" id="email" placeholder="hubert.bonisseur.de.la.bath@gmail.com " />
+            <img src="/assets/pictures/Check_green.svg" alt="check icon" class="icone_verif">
+            <span class="message_alerte">Enter a valid Email</span>
+          </div>
+          <div class="form_groupe">
+            <label for="telephone"> Enter your Phone number </label>
+            <input type="phone" name="phonenumber" id="phonenumber" placeholder="0656788908" maxlength="10" />
+            <img src="/assets/pictures/Check_green.svg" alt="check icon" class="icone_verif">
+            <span class="message_alerte">Enter a valid phone number</span>
+          </div>
+          <div class="form_groupe">
+            <label for="message"> Leave us your message </label><br />
+            <textarea name="client_message" id="client_message" placeholder="Leave your message here..."></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
     </div>
   </section>
+  <footer>
+
+  </footer>
+  <script src="/contact.js"> </script>
 </body>
 
 </html>
