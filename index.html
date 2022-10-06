@@ -18,21 +18,24 @@
       <ul>
         <li><a href="index.html"><img id="main_logo" src="/assets/pictures/circus_logo.png"
               alt="Logo Wild Circus" /></a></li>
-        <li><a href="#tickets"><img id="tickets_logo" src="/assets/pictures/buy_tickets.png" alt="Logo Tickets"></a>
-        </li>
+        <li><a href="#tickets"><img id="tickets_logo" src="/assets/pictures/buy_tickets.png" alt="Logo Tickets"></a></li>
         <li class="hamburger">
           <span class="bar-top"></span>
           <span class="bar-mid"></span>
           <span class="bar-bot"></span>
         </li>
       </ul>
+      <ul class="wide-screen-menu">
+        <li><a class ="about-us-navbar" href="#about_us">About us</a></li>
+        <li><a class ="contact-navbar" href="#contact">Contact</a></li>
+      </ul>
     </nav>
     <ul class="offscreen-menu">
-      <li class="list-menu"><a href="#about_us">About us</a></li>
+      <li class="list-menu"><a href="#about_us" onclick="offscreenMenuOff()">About us</a></li>
       <hr class="offscreen-menu-line" />
-      <li class="list-menu"><a href="#contact">Contact</a></li>
+      <li class="list-menu"><a href="#contact" onclick="offscreenMenuOff()">Contact</a></li>
       <hr class="offscreen-menu-line" />
-      <li><a href="#">EN/FR</a></li>
+      <li class="buy-tickets"><a href="#tickets" onclick="offscreenMenuOff()">Tickets</a></li>
     </ul>
   </header>
 
@@ -99,6 +102,8 @@
 
     <h1 id="main_title"> WELCOME TO CIRCUS</h1>
     </div>
+<div class="line"> <img class="otherline" src="/assets/pictures/line.png" alt="just a line" /></div>
+    
 
     <div class="conteneur_description">
       <article class="first_article">
@@ -125,7 +130,7 @@
         </div>
       </article>
     </div>
-    <div class="line"> <img id="line" src="/assets/pictures/line.png" alt="just a line" /></div>
+    <div class="line"> <img class="otherline" src="/assets/pictures/line.png" alt="just a line" /></div>
   </section>
   <section id="about_us">
     <img id="team_picture" src="assets/pictures/team_v2.jpg" alt="Picture of the team" />
@@ -135,52 +140,52 @@
         <div><img src="/assets/pictures/beatrice.png" alt="photo de béatrice"></div>
         <div>
           <h3>Béatrice DUPREZ</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit quibusdam officiis alias
-            velit exercitationem ex excepturi explicabo earum? Voluptates suscipit repudiandae, illo unde aut eaque a
-            assumenda aliquam ea?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae rem voluptatem
-            corporis, ea ullam culpa eveniet, libero exercitationem sequi facilis! Explicabo magni tenetur sint
-            suscipit
-            maxime totam minima id?</p>
+          <p>Je suis entré dans le monde du cirque il y a une dizaine d’année désormais. Du cirque français au cirque
+            canadien, du cirque d’auteur au cirque commercial, de la rue, au chapiteau, en passant par la salle de
+            spectacle. J’ai eu la chance d’être nourri par diverses expériences de créations, mais surtout d’avoir pu
+            échanger et débattre avec des artistes, artisans et techniciens de tous horizons.<br> Ces rencontres m’ont
+            aidées à m’ouvrir, à découvrir et à encourager la diversité de création circassienne, dans le monde, tout en
+            dirigeant mon travail vers l’expérimentation.</p>
         </div>
       </article>
       <article class="second_artist">
         <div><img src="/assets/pictures/jean.png" alt="photo de jean"></div>
         <div>
           <h3>Jean LECORNU</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit quibusdam officiis alias
-            velit exercitationem ex excepturi explicabo earum? Voluptates suscipit repudiandae, illo unde aut eaque a
-            assumenda aliquam ea?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae rem voluptatem
-            corporis, ea ullam culpa eveniet, libero exercitationem sequi facilis! Explicabo magni tenetur sint
-            suscipit
-            maxime totam minima id?</p>
+          <p>Je suis entré dans le monde du cirque il y a une dizaine d’année désormais. Du cirque français au cirque
+            canadien, du cirque d’auteur au cirque commercial, de la rue, au chapiteau, en passant par la salle de
+            spectacle. J’ai eu la chance d’être nourri par diverses expériences de créations, mais surtout d’avoir pu
+            échanger et débattre avec des artistes, artisans et techniciens de tous horizons.<br> Ces rencontres m’ont
+            aidées à m’ouvrir, à découvrir et à encourager la diversité de création circassienne, dans le monde, tout en
+            dirigeant mon travail vers l’expérimentation.</p>
         </div>
       </article>
       <article class="third_artist">
         <div><img src="/assets/pictures/michel.png" alt="photo de michel"></div>
         <div>
           <h3>Michel ESPINOSA</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit quibusdam officiis alias
-            velit exercitationem ex excepturi explicabo earum? Voluptates suscipit repudiandae, illo unde aut eaque a
-            assumenda aliquam ea?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae rem voluptatem
-            corporis, ea ullam culpa eveniet, libero exercitationem sequi facilis! Explicabo magni tenetur sint
-            suscipit
-            maxime totam minima id?</p>
+          <p>Je suis entré dans le monde du cirque il y a une dizaine d’année désormais. Du cirque français au cirque
+            canadien, du cirque d’auteur au cirque commercial, de la rue, au chapiteau, en passant par la salle de
+            spectacle. J’ai eu la chance d’être nourri par diverses expériences de créations, mais surtout d’avoir pu
+            échanger et débattre avec des artistes, artisans et techniciens de tous horizons.<br> Ces rencontres m’ont
+            aidées à m’ouvrir, à découvrir et à encourager la diversité de création circassienne, dans le monde, tout en
+            dirigeant mon travail vers l’expérimentation.</p>
         </div>
       </article>
       <article class="fourth_artist">
         <div><img src="/assets/pictures/valerie.png" alt="photo de valerie"></div>
         <div>
           <h3>Valérie DUPIELET</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit quibusdam officiis alias
-            velit exercitationem ex excepturi explicabo earum? Voluptates suscipit repudiandae, illo unde aut eaque a
-            assumenda aliquam ea?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae rem voluptatem
-            corporis, ea ullam culpa eveniet, libero exercitationem sequi facilis! Explicabo magni tenetur sint
-            suscipit
-            maxime totam minima id?</p>
+          <p>Je suis entré dans le monde du cirque il y a une dizaine d’année désormais. Du cirque français au cirque
+            canadien, du cirque d’auteur au cirque commercial, de la rue, au chapiteau, en passant par la salle de
+            spectacle. J’ai eu la chance d’être nourri par diverses expériences de créations, mais surtout d’avoir pu
+            échanger et débattre avec des artistes, artisans et techniciens de tous horizons.<br> Ces rencontres m’ont
+            aidées à m’ouvrir, à découvrir et à encourager la diversité de création circassienne, dans le monde, tout en
+            dirigeant mon travail vers l’expérimentation.</p>
         </div>
       </article>
     </div>
-    <div class="line"> <img id="line" src="/assets/pictures/line.png" alt="just a line" /></div>
+    <div class="line"> <img class="otherline" src="/assets/pictures/line.png" alt="just a line" /></div>
   </section>
 
   <section id="tickets">
@@ -249,7 +254,7 @@
         </div>
       </article>
     </div>
-    <div class="line"> <img id="line" src="/assets/pictures/line.png" alt="just a line" /></div>
+    <div class="line"> <img class="otherline" src="/assets/pictures/line.png" alt="just a line" /></div>
   </section>
   <section id="contact">
     <img id="contact_picture" src="assets/pictures/contact_v2.jpg" alt="Picture of an old phone" />
@@ -280,7 +285,7 @@
             <label for="message"> Leave us your message </label><br />
             <textarea name="client_message" id="client_message" placeholder="Leave your message here..."></textarea>
           </div>
-          <button onclick="popup()" type="submit">Send</button>
+          <button type="button" class="btn" onclick="popup()">Send</button>
         </form>
       </div>
 
@@ -290,7 +295,7 @@
     <p>
       Ltd "Wild Circus United". All rights reserved
     </p>
-    <div class="line"> <img id="line" src="/assets/pictures/line.png" alt="just a line" /></div>
+    <div class="line"> <img class="otherline" src="/assets/pictures/line.png" alt="just a line" /></div>
   </footer>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="script.js"></script>
@@ -298,7 +303,4 @@
 
   </div>
 </body>
-
-
-
 </html>

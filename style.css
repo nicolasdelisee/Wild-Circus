@@ -75,17 +75,17 @@ body {
   background-color: var(--main-color);
   height: 3.75rem;
   font-family: var(--title-font);
-
 }
 
-
+.wide-screen-menu {
+  display: none;
+}
 
 #main_logo {
   width: auto;
   height: 4.2rem;
   top: 0vw;
   left: 0.2rem;
-
 }
 
 #tickets_logo {
@@ -100,11 +100,6 @@ body {
   z-index: 30;
 }
 
-#tickets_logo:hover {
-  transform: scale(1.1);
-  transition: all 0.4s ease-out;
-}
-
 /* Burger menu */
 
 .hamburger {
@@ -112,8 +107,6 @@ body {
   position: absolute;
   right: 1.5rem;
   top: 0.9rem;
-
-
 }
 
 .bar-top,
@@ -126,7 +119,6 @@ body {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: var(--second-color);
-
 }
 
 .offscreen-menu {
@@ -158,20 +150,11 @@ body {
   color: var(--second-color);
 }
 
-.offscreen-menu li a:hover {
-  font-size: 1.11em;
-  font-weight: bold;
-  transition: all 0.5s ease;
-}
-
 .offscreen-menu-line {
   display: block;
   border: 0;
   border-top: 1px solid var(--third-color);
   width: 5rem;
-
-
-
 }
 
 /* End of Burger menu */
@@ -355,10 +338,6 @@ video {
   background-size: cover;
 }
 
-/*p {
-  margin-left: 3em;
-}
-*/
 /* slider*/
 
 
@@ -368,7 +347,7 @@ video {
   justify-content: center;
   margin: 3vw 10vw 2vw 10vw;
   position: absolute;
-  top: 15%;
+  top: 11%;
   z-index: 0;
   color: rgb(244, 225, 208, 0.8);
   font-size: 10vw;
@@ -644,24 +623,28 @@ button:hover span:after {
   padding-left: 10%;
   padding-right: 10%;
 
+
 }
 
 .second_artist div p {
   margin-top: 2%;
   padding-left: 10%;
   padding-right: 10%;
+
 }
 
 .third_artist div p {
   margin-top: 2%;
   padding-left: 10%;
   padding-right: 10%;
+
 }
 
 .fourth_artist div p {
   margin-top: 2%;
   padding-left: 10%;
   padding-right: 10%;
+
 }
 
 .first_artist div img {
@@ -762,7 +745,7 @@ textarea {
   width: 30px;
   position: absolute;
   right: 27px;
-  top: 50px;
+  top: 45px;
   display: none;
 }
 
@@ -806,8 +789,8 @@ footer p {
   font-size: 0.6em;
 }
 
-#line {
-  width: 80%;
+.otherline {
+  width: 70%;
 }
 
 .line {
@@ -821,10 +804,122 @@ footer p {
 
   }
 }
-/* Partie Anthony*/
-
 
 @media screen and (min-width: 601px) {
+
+  .otherline {
+    width: 20%;
+  }
+
+  .first_article {
+    display: flex;
+  }
+
+  .second_article {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 5vh 0;
+  }
+
+  .third_article {
+    display: flex;
+    margin-bottom: 5vh;
+  }
+
+  .navbar ul {
+    height: 2.5rem;
+  }
+
+  .wide-screen-menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-us-navbar {
+    position: relative;
+    right: 7.2rem;
+  }
+
+  .contact-navbar {
+    position: relative;
+    left: 7rem;
+  }
+
+  .wide-screen-menu li a {
+    text-decoration: none;
+    color: var(--second-color);
+  }
+
+  .wide-screen-menu li a:hover {
+    font-size: 1.11em;
+    font-weight: bold;
+    transition: all 0.5s ease;
+  }
+
+
+  #main_logo {
+    height: 7rem;
+    left: 1rem;
+  }
+
+  #tickets_logo {
+    top: 0.5rem;
+    height: 5.8rem;
+  }
+
+  #tickets_logo:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-out;
+  }
+
+  /* Burger menu */
+
+  .hamburger {
+    display: none;
+  }
+
+  .offscreen-menu {
+    display: none;
+  }
+
+  /*paulBRANCH*/
+  input {
+
+    width: 50vw;
+  }
+
+  textarea {
+
+    width: 50vw;
+    height: 30vh;
+  }
+
+  .box_login h1 {
+    margin-bottom: 50px;
+    margin-top: 70px;
+  }
+
+  .conteneur_about .first_artist {
+    width: 40%;
+
+  }
+
+  .conteneur_about .second_artist {
+    width: 40%;
+
+  }
+
+  .conteneur_about .third_artist {
+    width: 40%;
+
+  }
+
+  .conteneur_about .fourth_artist {
+    width: 40%;
+
+  }
+/* Partie Anthony*/
+
   .btn-tickets {
     display: flex;
     justify-content: space-around;
@@ -858,4 +953,5 @@ button {
 .paraf{
   width: 30%;
 }
+
 }
