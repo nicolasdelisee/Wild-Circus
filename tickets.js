@@ -4,6 +4,7 @@ function popup() {
 
   Toastify({
     text: "Sent !👍",
+    fontSize: "30px",
     duration: 3000,
     destination: "https://github.com/apvarun/toastify-js",
     newWindow: true,
