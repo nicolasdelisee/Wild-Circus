@@ -1,5 +1,3 @@
-console.log("Hello circus");
-
 const hamburger = document.querySelector(".hamburger");
 const offscreenMenu = document.querySelector(".offscreen-menu");
 
