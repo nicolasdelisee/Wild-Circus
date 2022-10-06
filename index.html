@@ -11,19 +11,26 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
-    <header>
-      <nav class="navbar">
-        <ul>
-          <li><a href="index.html"><img id="main_logo" src="/assets/pictures/circus_logo.png"
-                alt="Logo Wild Circus" /></a></li>
-          <li><a href="#about_us">About us</a></li>
-          <li><a href="#tickets"><img id="tickets_logo" src="/assets/pictures/buy_tickets.png" alt="Logo Tickets"></a>
-          </li>
-          <li><a href=#contact>Contact</a></li>
-          <li>FR/EN</li>
-        </ul>
-      </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html"><img id="main_logo" src="/assets/pictures/circus_logo.png" alt="Logo Wild Circus" /></a></li>
+        <li><a href="#tickets"><img id="tickets_logo" src="/assets/pictures/buy_tickets.png" alt="Logo Tickets"></a></li>
+          
+        <li class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </li>
+      </ul>
+
+      <ul class="nav-menu">
+        <li><a href="#about_us">About us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">EN/FR</a></li>
+      </ul>
+    </nav>
+  </header>
 
     <section id="homepage">
       <div class="video_container">
@@ -205,13 +212,15 @@
             <label for="message"> Leave us your message</label><br />
             <textarea name="client_message" id="client_message"></textarea>
           </p>
-        </form>
-      </div>
-    </section>
-    <footer>
-    </footer>
+        </div>
+      </article>
+  <footer>
+
+  </footer>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="script.js"></script>
 </body>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
 
 </html>
