@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>Wild Circus show</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css" />
-  <script src="popup.js"></script>
-  <script src="tickets.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-</head>
+  <head>
+    <div id="overlay" onclick="off()"></div>
+    <title>Wild Circus show</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <script src="tickets.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  </head>
 
-<body>
-  <header>
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html"><img id="main_logo" src="/assets/pictures/circus_logo.png"
-              alt="Logo Wild Circus" /></a></li>
-        <li><a href="#tickets"><img id="tickets_logo" src="/assets/pictures/buy_tickets.png" alt="Logo Tickets"></a>
-        </li>
 
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html"><img id="main_logo" src="/assets/pictures/circus_logo.png"
+                alt="Logo Wild Circus" /></a></li>
+          <li><a href="#tickets"><img id="tickets_logo" src="/assets/pictures/buy_tickets.png" alt="Logo Tickets"></a>
+          </li>
         <li class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+          <span class="bar-top"></span>
+          <span class="bar-mid"></span>
+          <span class="bar-bot"></span>
         </li>
-      </ul>
-
-      <ul class="nav-menu">
-        <li><a href="#about_us">About us</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#">EN/FR</a></li>
       </ul>
     </nav>
+    <ul class="offscreen-menu">
+      <li class="list-menu"><a href="#about_us">About us</a></li>
+      <hr class="offscreen-menu-line" />
+      <li class="list-menu"><a href="#contact">Contact</a></li>
+      <hr class="offscreen-menu-line" />
+      <li><a href="#">EN/FR</a></li>
+    </ul>
   </header>
 
   <section id="homepage">
@@ -88,205 +89,230 @@
               <label for="slides_1"></label>
               <label for="slides_2"></label>
               <label for="slides_3"></label>
+              <label class="goto-first" for="slides_1"></label>
+              <label class="goto-last" for="slides_3"></label>
+            </div>
+            <div class="navigation">
+              <div>
+                <label for="slides_1"></label>
+                <label for="slides_2"></label>
+                <label for="slides_3"></label>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Slider -->
+      <!-- Slider -->
 
-    <h1 id="main_title"> WELCOME TO CIRCUS</h1>
-    </div>
+      <h1 id="main_title"> WELCOME TO CIRCUS</h1>
+</div>
 
-    <div class="conteneur_description">
-      <article class="first_article">
-        <div><img id="elephant" src="/assets/pictures/elephant.jpg" alt="Elephant and red curtain"></div>
-        <div class="discription_articles">
-          <h2>Step in into the world of magic</h2>
-          <p>Get ready for one of the most spectacular jorneys. Take your seat and prepare yourself to be surprised.
-          </p>
-        </div>
-      </article>
-      <article class="second_article">
-        <div><img id="acrobats" src="/assets/pictures/acrobats.jpg" alt="Acrobats en action"></div>
-        <div class="discription_articles">
-          <h2> Discover the impossible and beyond </h2>
-          <p> Forget everything that you have ever known about magic. You will step into a new world that you could
-            never imagine. </p>
-        </div>
-      </article>
-      <article class="third_article">
-        <div><img id="gymnaste" src="/assets/pictures/gymnaste.jpg" alt="Gymnaste suspendue"></div>
-        <div class="discription_articles">
-          <h2>Only the best artists living their passion</h2>
-          <p>Meet the legends of the circus ready to make you dream, love and belive. </p>
-        </div>
-      </article>
+<div class="conteneur_description">
+  <article class="first_article">
+    <div><img id="elephant" src="/assets/pictures/elephant.jpg" alt="Elephant and red curtain"></div>
+    <div class="discription_articles">
+      <h2>Step in into the world of magic</h2>
+      <p>Get ready for one of the most spectacular jorneys. Take your seat and prepare yourself to be surprised.
+      </p>
     </div>
-    <div class="line"> <img id="line" src="/assets/pictures/line.png" alt="just a line" /></div>
-  </section>
-  <section id="about_us">
-    <img id="team_picture" src="assets/pictures/team_v2.jpg" alt="Picture of the team" />
-    <h1 id="team_title">Wild Circus Team</h1>
-    <div class="conteneur_about">
-      <article class="first_artist">
-        <div><img src="/assets/pictures/beatrice.png" alt="photo de béatrice"></div>
-        <div>
-          <h2>Béatrice DUPREZ</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit quibusdam officiis alias
-            velit exercitationem ex excepturi explicabo earum? Voluptates suscipit repudiandae, illo unde aut eaque a
-            assumenda aliquam ea?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae rem voluptatem
-            corporis, ea ullam culpa eveniet, libero exercitationem sequi facilis! Explicabo magni tenetur sint
-            suscipit
-            maxime totam minima id?</p>
-        </div>
-      </article>
-      <article class="second_artist">
-        <div><img src="/assets/pictures/jean.png" alt="photo de jean"></div>
-        <div>
-          <h2>Jean LECORNU</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit quibusdam officiis alias
-            velit exercitationem ex excepturi explicabo earum? Voluptates suscipit repudiandae, illo unde aut eaque a
-            assumenda aliquam ea?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae rem voluptatem
-            corporis, ea ullam culpa eveniet, libero exercitationem sequi facilis! Explicabo magni tenetur sint
-            suscipit
-            maxime totam minima id?</p>
-        </div>
-      </article>
-      <article class="third_artist">
-        <div><img src="/assets/pictures/michel.png" alt="photo de michel"></div>
-        <div>
-          <h2>Michel ESPINOSA</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit quibusdam officiis alias
-            velit exercitationem ex excepturi explicabo earum? Voluptates suscipit repudiandae, illo unde aut eaque a
-            assumenda aliquam ea?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae rem voluptatem
-            corporis, ea ullam culpa eveniet, libero exercitationem sequi facilis! Explicabo magni tenetur sint
-            suscipit
-            maxime totam minima id?</p>
-        </div>
-      </article>
-      <article class="fourth_artist">
-        <div><img src="/assets/pictures/valerie.png" alt="photo de valerie"></div>
-        <div>
-          <h2>Valérie DUPIELET</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit quibusdam officiis alias
-            velit exercitationem ex excepturi explicabo earum? Voluptates suscipit repudiandae, illo unde aut eaque a
-            assumenda aliquam ea?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae rem voluptatem
-            corporis, ea ullam culpa eveniet, libero exercitationem sequi facilis! Explicabo magni tenetur sint
-            suscipit
-            maxime totam minima id?</p>
-        </div>
-      </article>
+  </article>
+  <article class="second_article">
+    <div><img id="acrobats" src="/assets/pictures/acrobats.jpg" alt="Acrobats en action"></div>
+    <div class="discription_articles">
+      <h2> Discover the impossible and beyond </h2>
+      <p> Forget everything that you have ever known about magic. You will step into a new world that you could
+        never imagine. </p>
     </div>
-    <div class="line"> <img id="line" src="/assets/pictures/line.png" alt="just a line" /></div>
-  </section>
-
-  <section id="tickets">
-    <h1>Your tickets</h1>
-    <img id="tickets_picture" src="assets/pictures/tickets.jpg" alt="Picture of the team" />
-    <div class="conteneur_tickets">
-      <h1>Wild Circus on tour</h1>
-      <article id="first_city">
-        <div>
-          <h2>Paris</h2>
-          <h3>Palais des Congrès de Paris</h3>
-        </div>
-        <div class="button_tickets">
-          <p>TUE FEB 21 20:00</p>
-          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
-          <div class="login-popup">
-            <div class="form-popup" id="popupForm">
-              <form action="/action_page.php" class="form-container">
-                <h2>Reservation Tickets Wild Circus</h2>
-                <label for="Firstname">
-                  <strong>Firstname</strong>
-                </label>
-                <input type="text" id="Firstname" placeholder="Firstname" name="Firstname" required />
-                <label for="Lastname">
-                  <strong>Lastname</strong>
-                </label>
-                <input type="text" id="Lastname" placeholder="Lastname" name="Lastname" required />
-                <label for="email">
-                  <strong>E-mail</strong>
-                </label>
-                <input type="text" id="email" placeholder="Votre Email" name="email" required />
-                <button type="button" class="btn" onclick="popup()">Valid</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Fermer</button>
-              </form>
-            </div>
-          </div>
-          <p>TUE FEB 21 20:00</p>
-          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
-          <p>TUE FEB 21 20:00</p>
-          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
-        </div>
-      </article>
-      <article id="second_city">
-        <div>
-          <h2>Bordeaux</h2>
-          <h3>Arkéna Arena</h3>
-        </div>
-        <div class="button_tickets">
-          <p>TUE FEB 21 20:00</p>
-          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
-          <p>WED FEB 22 20:00</p>
-          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
-          <p>THU FEB 23 20:00</p>
-          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
-        </div>
-      </article>
-      <article id="first_city">
-        <div>
-          <h2>Lyon</h2>
-          <h3>L’Amphithéatre 3000</h3>
-        </div>
-        <p></p>
-        <div class="button_tickets">
-          <p>MON APR 24 15:00</p>
-          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
-          <p>TUE APR 25 20:00</p>
-          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
-          <p>WED APR 26 20:00</p>
-          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
-        </div>
-      </article>
+  </article>
+  <article class="third_article">
+    <div><img id="gymnaste" src="/assets/pictures/gymnaste.jpg" alt="Gymnaste suspendue"></div>
+    <div class="discription_articles">
+      <h2>Only the best artists living their passion</h2>
+      <p>Meet the legends of the circus ready to make you dream, love and belive. </p>
     </div>
-    <div class="line"> <img id="line" src="/assets/pictures/line.png" alt="just a line" /></div>
-  </section>
-  <section id="contact">
-    <img id="contact_picture" src="assets/pictures/contact_v2.jpg" alt="Picture of an old phone" />
-    <!-- <div class="box_contact">
-      <div class="box_login">
-        <h1>Contact us</h1>
-        <form>
-          <div class="form_groupe">
-            <label for="clientname"> Your name </label>
-            <input type="texte" name="clientname" id="clientname" placeholder="Hubert Bonisseur de la Bath"
-              maxlength="30" minlength="3" />
-            <img src="/assets/pictures/Check_green.svg" alt="check icon" class="icone_verif">
-            <span class="message_alerte">Write you name and first name min 5 character</span>
-          </div>
-          <div class="form_groupe">
-            <label for="email"> Enter your Email adress </label>
-            <input type="email" name="emailadress" id="email" placeholder="hubert.bonisseur.de.la.bath@gmail.com " />
-            <img src="/assets/pictures/Check_green.svg" alt="check icon" class="icone_verif">
-            <span class="message_alerte">Enter a valid Email</span>
-          </div>
-          <div class="form_groupe">
-            <label for="telephone"> Enter your Phone number </label>
-            <input type="phone" name="phonenumber" id="phonenumber" placeholder="0656788908" maxlength="10" />
-            <img src="/assets/pictures/Check_green.svg" alt="check icon" class="icone_verif">
-            <span class="message_alerte">Enter a valid phone number</span>
-          </div>
-          <div class="form_groupe">
-            <label for="message"> Leave us your message </label><br />
-            <textarea name="client_message" id="client_message" placeholder="Leave your message here..."></textarea>
-          </div>
-          <button type="submit">Send</button>
-        </form>
+  </article>
+</div>
+<div class="line"> <img id="line" src="/assets/pictures/line.png" alt="just a line" /></div>
+</section>
+<section id="about_us">
+  <img id="team_picture" src="assets/pictures/team_v2.jpg" alt="Picture of the team" />
+  <h1 id="team_title">Wild Circus Team</h1>
+  <div class="conteneur_about">
+    <article class="first_artist">
+      <div><img src="/assets/pictures/beatrice.png" alt="photo de béatrice"></div>
+      <div>
+        <h2>Béatrice DUPREZ</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit quibusdam officiis alias
+          velit exercitationem ex excepturi explicabo earum? Voluptates suscipit repudiandae, illo unde aut eaque a
+          assumenda aliquam ea?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae rem voluptatem
+          corporis, ea ullam culpa eveniet, libero exercitationem sequi facilis! Explicabo magni tenetur sint
+          suscipit
+          maxime totam minima id?</p>
       </div>
-    </div> -->
+    </article>
+    <article class="second_artist">
+      <div><img src="/assets/pictures/jean.png" alt="photo de jean"></div>
+      <div>
+        <h2>Jean LECORNU</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit quibusdam officiis alias
+          velit exercitationem ex excepturi explicabo earum? Voluptates suscipit repudiandae, illo unde aut eaque a
+          assumenda aliquam ea?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae rem voluptatem
+          corporis, ea ullam culpa eveniet, libero exercitationem sequi facilis! Explicabo magni tenetur sint
+          suscipit
+          maxime totam minima id?</p>
+      </div>
+    </article>
+    <article class="third_artist">
+      <div><img src="/assets/pictures/michel.png" alt="photo de michel"></div>
+      <div>
+        <h2>Michel ESPINOSA</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit quibusdam officiis alias
+          velit exercitationem ex excepturi explicabo earum? Voluptates suscipit repudiandae, illo unde aut eaque a
+          assumenda aliquam ea?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae rem voluptatem
+          corporis, ea ullam culpa eveniet, libero exercitationem sequi facilis! Explicabo magni tenetur sint
+          suscipit
+          maxime totam minima id?</p>
+      </div>
+    </article>
+    <article class="fourth_artist">
+      <div><img src="/assets/pictures/valerie.png" alt="photo de valerie"></div>
+      <div>
+        <h2>Valérie DUPIELET</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit quibusdam officiis alias
+          velit exercitationem ex excepturi explicabo earum? Voluptates suscipit repudiandae, illo unde aut eaque a
+          assumenda aliquam ea?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae rem voluptatem
+          corporis, ea ullam culpa eveniet, libero exercitationem sequi facilis! Explicabo magni tenetur sint
+          suscipit
+          maxime totam minima id?</p>
+      </div>
+    </article>
+  </div>
+  <div class="line"> <img id="line" src="/assets/pictures/line.png" alt="just a line" /></div>
+</section>
+
+<section id="tickets">
+  <img id="tickets_picture" src="assets/pictures/tickets2.jpg" alt="Picture of the team" />
+  <div class="conteneur_tickets">
+    <h1>Wild Circus on tour</h1>
+    <article id="first_city">
+      <div>
+        <h2>Paris</h2>
+        <h3>Palais des Congrès de Paris</h3>
+      </div>
+      <div class="button_tickets">
+        <div class="btn-tickets">
+          <p>TUE FEB 21 20:00</p>
+          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+        </div>
+        <div class="login-popup">
+          <div class="form-popup" id="popupForm">
+            <form action="/action_page.php" class="form-container">
+              <h2>Reservation Tickets Wild Circus</h2>
+              <label for="Firstname">
+                <strong>Firstname</strong>
+              </label>
+              <input type="text" id="Firstname" placeholder="Firstname" name="Firstname" required />
+              <label for="Lastname">
+                <strong>Lastname</strong>
+              </label>
+              <input type="text" id="Lastname" placeholder="Lastname" name="Lastname" required />
+              <label for="email">
+                <strong>E-mail</strong>
+              </label>
+              <input type="text" id="email" placeholder="Votre Email" name="email" required />
+              <button type="button" class="btn" onclick="popup()">Valid</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+        </div>
+        <div class="btn-tickets">
+          <p>TUE FEB 21 20:00</p>
+          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+        </div>
+        <div class="btn-tickets">
+          <p>TUE FEB 21 20:00</p>
+          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+        </div>
+      </div>
+    </article>
+    <article id="second_city">
+      <div>
+        <h2>Bordeaux</h2>
+        <h3>Arkéna Arena</h3>
+      </div>
+      <div class="button_tickets">
+        <div class="btn-tickets">
+          <p>TUE FEB 21 20:00</p>
+          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+        </div>
+        <div class="btn-tickets">
+          <p>TUE FEB 21 20:00</p>
+          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+        </div>
+        <div class="btn-tickets">
+          <p>TUE FEB 21 20:00</p>
+          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+        </div>
+      </div>
+    </article>
+    <article id="first_city">
+      <div>
+        <h2>Lyon</h2>
+        <h3>L’Amphithéatre 3000</h3>
+      </div>
+      <p></p>
+      <div class="button_tickets">
+        <div class="btn-tickets">
+          <p>TUE FEB 21 20:00</p>
+          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+        </div>
+        <div class="btn-tickets">
+          <p>TUE FEB 21 20:00</p>
+          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+        </div>
+        <div class="btn-tickets">
+          <p>TUE FEB 21 20:00</p>
+          <button class="open-button" onclick="openForm()"><strong>Réserver</strong></button>
+        </div>
+      </div>
+    </article>
+  </div>
+  <div class="line"> <img id="line" src="/assets/pictures/line.png" alt="just a line" /></div>
+</section>
+<section id="contact">
+  <img id="contact_picture" src="assets/pictures/contact_v2.jpg" alt="Picture of an old phone" />
+  <div class="box_contact">
+    <div class="box_login">
+      <h1>Contact us</h1>
+      <form>
+        <div class="form_groupe">
+          <label for="clientname"> Your name </label>
+          <input type="texte" name="clientname" id="clientname" placeholder="Hubert Bonisseur de la Bath" maxlength="30"
+            minlength="3" />
+          <img src="/assets/pictures/Check_green.svg" alt="check icon" class="icone_verif">
+          <span class="message_alerte">Write you name and first name min 5 character</span>
+        </div>
+        <div class="form_groupe">
+          <label for="email"> Enter your Email adress </label>
+          <input type="email" name="emailadress" id="email" placeholder="hubert.bonisseur.de.la.bath@gmail.com " />
+          <img src="/assets/pictures/Check_green.svg" alt="check icon" class="icone_verif">
+          <span class="message_alerte">Enter a valid Email</span>
+        </div>
+        <div class="form_groupe">
+          <label for="telephone"> Enter your Phone number </label>
+          <input type="phone" name="phonenumber" id="phonenumber" placeholder="0656788908" maxlength="10" />
+          <img src="/assets/pictures/Check_green.svg" alt="check icon" class="icone_verif">
+          <span class="message_alerte">Enter a valid phone number</span>
+        </div>
+        <div class="form_groupe">
+          <label for="message"> Leave us your message </label><br />
+          <textarea name="client_message" id="client_message" placeholder="Leave your message here..."></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
   </section>
   <footer>
     <div> <img id="logo_reseaux" src="/assets/pictures/logo_reseaux.png" alt="logo des réseaux sociaux" /></div>
@@ -297,7 +323,9 @@
   </footer>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="script.js"></script>
-  <script src="/contact.js"> </script>
+  <script src="contact.js"> </script>
+
+</div>
 </body>
 
 
