@@ -48,7 +48,8 @@ h1 {
 h2 {
   font-size: 1.7em;
 }
-h3{
+
+h3 {
   font-size: 1.2em;
 }
 
@@ -93,7 +94,7 @@ body {
   height: 3.5rem;
 }
 
-#tickets_logo:hover{
+#tickets_logo:hover {
   transform: scale(1.2);
 }
 
@@ -116,7 +117,7 @@ body {
 .hamburger {
   display: block;
   margin: 1rem 1rem;
-  
+
 }
 
 .bar {
@@ -292,8 +293,7 @@ body {
 
 .csslider>input:nth-of-type(1):checked~.navigation label:nth-of-type(1):after,
 .csslider>input:nth-of-type(2):checked~.navigation label:nth-of-type(2):after,
-.csslider>input:nth-of-type(3):checked~.navigation label:nth-of-type(3):after
- {
+.csslider>input:nth-of-type(3):checked~.navigation label:nth-of-type(3):after {
   opacity: 1;
 }
 
@@ -341,8 +341,7 @@ body {
 .csslider>input:nth-of-type(1):checked~.arrows>label:nth-of-type(0),
 .csslider>input:nth-of-type(2):checked~.arrows>label:nth-of-type(1),
 .csslider>input:nth-of-type(3):checked~.arrows>label:nth-of-type(2),
-.csslider>input:nth-of-type(4):checked~.arrows>label:nth-of-type(3)
- {
+.csslider>input:nth-of-type(4):checked~.arrows>label:nth-of-type(3) {
   display: block;
   left: 0;
   right: auto;
@@ -357,8 +356,7 @@ body {
 .csslider>input:nth-of-type(1):checked~.arrows>label:nth-of-type(2),
 .csslider>input:nth-of-type(2):checked~.arrows>label:nth-of-type(3),
 .csslider>input:nth-of-type(3):checked~.arrows>label:nth-of-type(4),
-.csslider>input:nth-of-type(4):checked~.arrows>label:nth-of-type(5)
-{
+.csslider>input:nth-of-type(4):checked~.arrows>label:nth-of-type(5) {
   display: block;
   right: 0;
   left: auto;
@@ -506,11 +504,12 @@ video {
 
 .button_tickets {
   display: flex;
-flex-direction: column;
+  flex-direction: column;
   align-items: center;
   margin: 100px;
 }
-.button_tickets p{
+
+.button_tickets p {
   text-align: center;
 }
 
@@ -528,12 +527,14 @@ button {
   cursor: pointer;
   margin: 5px;
 }
+
 button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
+
 button span:after {
   content: "\00bb";
   position: absolute;
@@ -542,12 +543,15 @@ button span:after {
   right: -20px;
   transition: 0.5s;
 }
+
 button:hover {
   background-color: #BD8915;
 }
+
 button:hover span {
   padding-right: 25px;
 }
+
 button:hover span:after {
   opacity: 1;
   right: 0;
@@ -567,6 +571,7 @@ button:hover span:after {
   text-align: center;
   width: 100%;
 }
+
 /* Masquez la forme Popup */
 .form-popup {
   display: none;
@@ -577,30 +582,34 @@ button:hover span:after {
   border: 2px solid #666;
   z-index: 9;
 }
+
 /* Styles pour le conteneur de forme */
 .form-container {
   width: 70vw;
   padding: 20px;
   background-color: white;
 }
+
 /* Styles pour le conteneur de forme h2 */
-.form-container h2{
-margin: 1vw 1vw 2vw 1vw;
+.form-container h2 {
+  margin: 1vw 1vw 2vw 1vw;
 }
 
 /* Largeur complète pour les champs de saisie */
-.form-container input[type="text"]{
+.form-container input[type="text"] {
   width: 100%;
   padding: 5px;
   margin: 5px 0 22px 0;
   border: none;
   background: #eee;
 }
+
 /*Quand les entrées sont concentrées, faites quelque chose */
-.form-container input[type="text"]:focus{
+.form-container input[type="text"]:focus {
   background-color: #ddd;
   outline: none;
 }
+
 /* Stylez le bouton de connexion*/
 .form-container .btn {
   background-color: #BD8915;
@@ -612,10 +621,12 @@ margin: 1vw 1vw 2vw 1vw;
   margin-bottom: 10px;
   opacity: 0.8;
 }
+
 /* Stylez le bouton pour annuler */
 .form-container .cancel {
   background-color: #AB0918;
 }
+
 /* Planez les effets pour les boutons */
 .form-container .btn:hover,
 .open-button:hover {
@@ -623,6 +634,7 @@ margin: 1vw 1vw 2vw 1vw;
 }
 
 #team_picture {
+  margin-top: 13vw;
   width: 100%;
   height: auto;
 }
@@ -724,18 +736,97 @@ margin: 1vw 1vw 2vw 1vw;
 #contact_picture {
   width: 100%;
   height: auto;
+  margin-top: 12vw;
 }
 
-#contact_form h1 {
+.box_login h1 {
   text-align: center;
-  margin: 2vw 0vw 2vw 0vw;
+  margin-top: 400px;
+
 }
 
-#contact_box {
+.box_contact {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  margin: 5vw 35vw 5vw 35vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_login {
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+
+.form_groupe {
+  position: relative;
+}
+
+label {
+  margin: 5px 23px;
+  font-size: 20px;
+  padding: 10px 0 5px 0;
+  display: block;
+  position: relative;
+}
+
+input {
+  display: block;
+  margin: 10px 20px 20px 20px;
+  outline: 0;
+  background: rgb(226, 226, 226);
+  width: 400px;
+  border: 0;
+  padding: 10px 12px;
+  border-radius: 3px;
+  font-size: 22px;
+  border: 1px solid rgba(0, 0, O, 0.3);
+
+}
+
+textarea {
+  display: block;
+  margin: 10px 20px 20px 20px;
+  outline: 0;
+  background: rgb(226, 226, 226);
+  width: 400px;
+  height: 300px;
+  border: 0;
+  padding: 10px 12px;
+  border-radius: 3px;
+  font-size: 22px;
+  border: 1px solid rgba(0, 0, O, 0.3);
+}
+
+.form_groupe img {
   text-align: center;
+  width: 40px;
+}
+
+.icone_verif {
+  width: 30px;
+  position: absolute;
+  right: 27px;
+  top: 50px;
+  display: none;
+}
+
+.message_alerte {
+  margin: 0px 23px;
+  color: crimson;
+  display: none;
+}
+
+.box_login form button {
+  display: block;
+  margin: 30px auto;
+  outline: 0;
+  width: 90%;
+  border: 0;
+  padding: 15px;
+  border-radius: 3px;
+  font-size: 20px;
+  cursor: pointer;
+
 }
 
 /* footer */
