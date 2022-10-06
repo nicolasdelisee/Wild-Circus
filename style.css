@@ -814,8 +814,7 @@ footer p {
   .first_article {
     display: flex;
   }
-
-  .second_article {
+    .second_article {
     display: flex;
     flex-direction: row-reverse;
     margin: 5vh 0;
@@ -826,35 +825,45 @@ footer p {
     margin-bottom: 5vh;
   }
 
+.about-us-navbar {
+  position: relative;
+  width: 40%;
+  right: 100px;
+}
+
+.contact-navbar {
+  position: relative;
+  width: 40%;
+  left: 100px;
+}
+
   .navbar ul {
     height: 2.5rem;
   }
 
-  .wide-screen-menu {
-    display: flex;
-    justify-content: center;
-  }
+/*
+.wide-screen-menu li a:hover {
+  font-size: 1.11em;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+*/
 
-  .about-us-navbar {
-    position: relative;
-    right: 7.2rem;
-  }
+#main_logo {
+  height: 8.5rem;
+  left: 0rem;
+}
 
-  .contact-navbar {
-    position: relative;
-    left: 7rem;
-  }
 
   .wide-screen-menu li a {
     text-decoration: none;
     color: var(--second-color);
   }
 
-  .wide-screen-menu li a:hover {
-    font-size: 1.11em;
-    font-weight: bold;
-    transition: all 0.5s ease;
-  }
+#tickets_logo:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-out;
+}
 
 
   #main_logo {
@@ -865,11 +874,6 @@ footer p {
   #tickets_logo {
     top: 0.5rem;
     height: 5.8rem;
-  }
-
-  #tickets_logo:hover {
-    transform: scale(1.2);
-    transition: all 0.3s ease-out;
   }
 
   /* Burger menu */
