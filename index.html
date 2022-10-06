@@ -32,17 +32,79 @@
     </nav>
   </header>
 
-    <section id="homepage">
-      <div class="video_container">
+  <section id="homepage">
+    <!--slider-->
+    <div id="video_slider">
+    <div style="height: 100%; overflow-x: hidden; text-align: center">
+      <div class="csslider infinity" id="slider1">
+        <input type="radio" name="slides" checked="checked" id="slides_1" />
+        <input type="radio" name="slides" id="slides_2" />
+        <input type="radio" name="slides" id="slides_3" />
+        <ul>
+          <li>
+            <p>
+              <video id="video_gymnaste_line" autoplay="autoplay" loop="loop" muted="muted" playsinline="">
+                <source src="/assets/videos/video_gymnaste_line.mp4" type="video/mp4"> Sorry, your
+                browser doesn't support embedded videos.
+              </video>
+            </p>
+          </li>
+          <li>
+            <p>
         <video id="video_gymnaste_line" autoplay="autoplay" loop="loop" muted="muted" playsinline="">
-          <source src="/assets/videos/video_gymnaste_line.mp4" type="video/mp4"> Sorry, your
+          <source src="/assets/videos/video_acrobat.mp4" type="video/mp4"> Sorry, your
           browser doesn't support embedded videos.
         </video>
+            </p>
+          </li>
+          <li>
+            <p>
+              <video id="video_gymnaste_line" autoplay="autoplay" loop="loop" muted="muted" playsinline="">
+                <source src="/assets/videos/video_fire_eater.mp4" type="video/mp4"> Sorry, your
+                browser doesn't support embedded videos.
+              </video>
+            </p>
+          </li>
+          <li>
+            <p>
+              <video controls preload>
+                <source src="" />
+              </video>
+            </p>
+          </li>
+          <li>
+            <p>
+              <video controls preload>
+                <source src="" />
+              </video>
+            </p>
+          </li>
+        </ul>
+        <div class="arrows">
+          <label for="slides_1"></label>
+          <label for="slides_2"></label>
+          <label for="slides_3"></label>
+          <label class="goto-first" for="slides_1"></label>
+          <label class="goto-last" for="slides_3"></label>
+        </div>
+        <div class="navigation">
+          <div>
+            <label for="slides_1"></label>
+            <label for="slides_2"></label>
+            <label for="slides_3"></label>
+            </div>
+        </div>
       </div>
+    </div>
+    </div>
+
+    <!-- Slider -->
+
+   <h1 id="main_title"> WELCOME TO CIRCUS</h1>
+    </div>
 
       <div class="conteneur_description">
-        <h1 id="main_title">Welcome to the wild circus!</h1>
-        <article class="first_article">
+          <article class="first_article">
           <div><img id="elephant" src="/assets/pictures/elephant.jpg" alt="Elephant and red curtain"></div>
           <div class="discription_articles">
             <h2>Step in into the world of magic</h2>
@@ -66,7 +128,8 @@
           </div>
         </article>
       </div>
-    </section>
+      <div class="line"> <img id="line" src="/assets/pictures/line.png" alt="just a line" /></div>
+  </section>
     <section id="about_us">
       <h1>About us</h1>
       <img id="team_picture" src="assets/pictures/team_v2.jpg" alt="Picture of the team" />
@@ -121,7 +184,8 @@
           </div>
         </article>
       </div>
-    </section>
+      <div class="line"> <img id="line" src="/assets/pictures/line.png" alt="just a line" /></div>
+  </section>
 
     <section id="tickets">
       <h1>Your tickets</h1>
@@ -193,7 +257,8 @@
           </div>
         </article>
       </div>
-    </section>
+      <div class="line"> <img id="line" src="/assets/pictures/line.png" alt="just a line" /></div>
+  </section>
     <section id="contact">
       <img id="contact_picture" src="assets/pictures/contact_v2.jpg" alt="Picture of an old phone" />
       <div id="contact_form">
@@ -215,7 +280,11 @@
         </div>
       </article>
   <footer>
-
+    <div> <img id="logo_reseaux" src="/assets/pictures/logo_reseaux.png" alt="logo des réseaux sociaux" /></div>
+    <p>
+      Ltd "Wild Circus United". All rights reserved
+    </p>
+    <div class="line"> <img id="line" src="/assets/pictures/line.png" alt="just a line" /></div>
   </footer>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="script.js"></script>
