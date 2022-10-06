@@ -746,17 +746,18 @@ button:hover span:after {
 }
 
 .box_contact {
-  height: 135vh;
+  height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  border: solid 2px black;
 }
 
 .box_login {
   flex-shrink: 0;
   border-radius: 5px;
   position: absolute;
+
 
 }
 
