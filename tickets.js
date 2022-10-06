@@ -1,5 +1,5 @@
 // Fonction de popup et de formulaire de réservation
-function reservation(){
+function popup(){
 
 
     Toastify({
@@ -28,6 +28,7 @@ function reservation(){
 
 function openForm() {
     document.getElementById("popupForm").style.display = "block";
+    // document.body.style.opacity = '0.3';
     }
     function closeForm() {
     document.getElementById("popupForm").style.display = "none";

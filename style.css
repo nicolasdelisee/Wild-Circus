@@ -43,7 +43,7 @@ h2{
   font-size: 1.7em;
 }
 h3{
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 p{
   font-size: 1.1em;
@@ -160,24 +160,19 @@ body {
 
 .conteneur_tickets h2 {
   text-align: center;
-  margin: 50px;
+
 }
 
 #tickets h3 {
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 5px;
-}
-
-#tickets h4 {
   text-align: center;
   margin-bottom: 50px;
   margin-top: 5px;
 }
 
+
 .button_tickets {
   display: flex;
-  flex-wrap: wrap;
+flex-direction: column;
   align-items: center;
   margin: 100px;
 }
@@ -186,7 +181,6 @@ body {
 }
 
 button {
-
   display: flexbox;
   background-color: #148276;
   border-radius: 10px;
@@ -195,8 +189,36 @@ button {
   text-align: center;
   font-size: 28px;
   padding: 20px;
-  width: 100%;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: #BD8915;
+}
+button:hover span {
+  padding-right: 25px;
+}
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 
 /* Prumpt réservation */
 /* Fixer le bouton sur le côté gauche de la page */
@@ -204,7 +226,6 @@ button {
   display: flex;
   justify-content: flex-start;
 }
-/* Stylez et fixez le bouton sur la page */
 
 /* Positionnez la forme Popup */
 .login-popup {
@@ -224,28 +245,31 @@ button {
 }
 /* Styles pour le conteneur de forme */
 .form-container {
-  max-width: 300px;
+  width: 70vw;
   padding: 20px;
-  background-color: #fff;
+  background-color: white;
 }
+/* Styles pour le conteneur de forme h2 */
+.form-container h2{
+margin: 1vw 1vw 2vw 1vw;
+}
+
 /* Largeur complète pour les champs de saisie */
-.form-container input[type="text"],
-.form-container input[type="password"] {
+.form-container input[type="text"]{
   width: 100%;
-  padding: 10px;
+  padding: 5px;
   margin: 5px 0 22px 0;
   border: none;
   background: #eee;
 }
 /*Quand les entrées sont concentrées, faites quelque chose */
-.form-container input[type="text"]:focus,
-.form-container input[type="password"]:focus {
+.form-container input[type="text"]:focus{
   background-color: #ddd;
   outline: none;
 }
 /* Stylez le bouton de connexion*/
 .form-container .btn {
-  background-color: #8ebf42;
+  background-color: #BD8915;
   color: #fff;
   padding: 12px 20px;
   border: none;
@@ -256,7 +280,7 @@ button {
 }
 /* Stylez le bouton pour annuler */
 .form-container .cancel {
-  background-color: #cc0000;
+  background-color: #AB0918;
 }
 /* Planez les effets pour les boutons */
 .form-container .btn:hover,
