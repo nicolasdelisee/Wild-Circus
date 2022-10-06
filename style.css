@@ -75,17 +75,13 @@ body {
   background-color: var(--main-color);
   height: 3.75rem;
   font-family: var(--title-font);
-
 }
-
-
 
 #main_logo {
   width: auto;
   height: 4.2rem;
   top: 0vw;
   left: 0.2rem;
-
 }
 
 #tickets_logo {
@@ -820,4 +816,114 @@ footer p {
     height: 25vh;
 
   }
+  }
+
+  @media screen and (min-width: 601px) { 
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+
+.navbar ul {
+
+  background-color: var(--main-color);
+  height: 5em;
+  font-family: var(--title-font);
+}
+
+#main_logo {
+  height: 7rem;
+  top: 0vw;
+  left: 1rem;
+
+}
+
+#tickets_logo {
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 3.5rem;
+  z-index: 30;
+}
+
+#tickets_logo:hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease-out;
+}
+
+/* Burger menu */
+
+.hamburger {
+  display: block;
+  position: absolute;
+  right: 1.5rem;
+  top: 0.9rem;
+
+
+}
+
+.bar-top,
+.bar-bot,
+.bar-mid {
+  display: block;
+  width: 1.5rem;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--second-color);
+
+}
+
+.offscreen-menu {
+  display: none;
+  z-index: 1;
+  width: 4.2rem;
+  padding: 0.8rem 1.2rem;
+  gap: 0.9rem;
+  position: fixed;
+  right: 0px;
+  top: 3.75rem;
+  text-align: center;
+  align-items: center;
+  background-color: var(--main-color);
+  transition: 2s;
+  flex-direction: column;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  ;
+}
+
+.offscreen-menu.active {
+  display: flex;
+}
+
+
+.offscreen-menu li a {
+  text-decoration: none;
+  color: var(--second-color);
+}
+
+.offscreen-menu li a:hover {
+  font-size: 1.11em;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+.offscreen-menu-line {
+  display: block;
+  border: 0;
+  border-top: 1px solid var(--third-color);
+  width: 5rem;
+}
+
+/* End of Burger menu */
 }
